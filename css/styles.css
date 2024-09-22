@@ -1,0 +1,131 @@
+/*****************************************************/
+/*                      Título                       */
+/*****************************************************/
+
+#superior{
+    text-align: center;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    background-color: palegoldenrod;
+}
+
+#mifoto{
+    height: 300px;
+}
+
+#titulo{
+    padding-top: 10%;
+}
+
+nav{
+    background-color: blanchedalmond;
+}
+
+#wrapper {width:100%;
+    margin:auto
+}
+
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+}
+
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+#grid-titulo{
+    display: grid;
+    grid-template-columns: 80% 20%;
+}
+
+/*****************************************************/
+/*                      Footer                       */
+/*****************************************************/
+
+#foot{
+    text-align: center;
+}
+
+/*****************************************************/
+/*                      Cards                        */
+/*****************************************************/
+
+button{
+    border-radius: 15%;
+
+    background-color: rgb(233, 167, 81);
+
+    color: rgb(0, 0, 0);
+
+}
+
+.card{
+    width: 70%;
+    border: 1px solid rgb(245, 240, 195);
+    border-radius: 4%;
+    background-color: rgb(245, 222, 191);
+
+    padding: 3%;
+
+    box-shadow:4px 4px 0px black;
+}
+
+.card:hover{
+
+    box-shadow:2px 2px 0px black;
+
+}
+
+.col-4{padding: 4%;}
+
+.grid-4{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+
+    padding-top: 8% ;
+    padding-bottom: 8% ;
+
+    background-color: rgb(255, 240, 242);
+
+}
+
+/*****************************************************/
+/*                      Cards                        */
+/*****************************************************/
+
+@media only screen and (width<900px) {
+
+    .grid-4{
+        grid-template-columns: 100%;
+    
+        padding-top: 8% ;
+        padding-bottom: 8% ;
+    
+    }
+
+    #grid-titulo{
+        display: grid;
+        grid-template-columns: 100% ;
+    }
+
+    #mifoto{
+        height: 100px;
+
+        padding-left: 40%;
+    }
+
+}

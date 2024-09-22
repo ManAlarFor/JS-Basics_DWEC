@@ -1,0 +1,67 @@
+/*****************************************************/
+/*                      Título                       */
+/*****************************************************/
+
+#superior{
+    text-align: center;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    background-color: palegoldenrod;
+}
+
+/*****************************************************/
+/*                      Footer                       */
+/*****************************************************/
+
+#foot{
+    text-align: center;
+}
+
+/*****************************************************/
+/*                      Cards                        */
+/*****************************************************/
+
+button{
+    border-radius: 15%;
+
+    background-color: rgb(233, 167, 81);
+
+    color: rgb(0, 0, 0);
+
+}
+
+.card{
+    width: 100%;
+    border: 1px solid rgb(245, 240, 195);
+    border-radius: 4%;
+    background-color: rgb(245, 222, 191);
+
+    padding: 3%;
+
+    margin: 2%;
+
+    left: 15%;
+
+    position: relative;
+
+    box-shadow:4px 4px 0px black;
+}
+
+.card:hover{
+
+    box-shadow:2px 2px 0px black;
+
+}
+
+.col-4{padding: 4%;}
+
+.grid-4{
+    display: grid;
+    grid-template-columns: 70%;
+
+    padding-top: 4% ;
+    padding-bottom: 4% ;
+
+    background-color: rgb(255, 240, 242);
+
+}
