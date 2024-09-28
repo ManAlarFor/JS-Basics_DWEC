@@ -1,31 +1,33 @@
+"use strict"
 
-function login() {
+function login(){
+    document.getElementById("size").style.display = "none";
+    document.getElementById("incorrect").style.display = "none";
 
-    let user ;
-    let pwrd ;
-    let retry ;
+    let username = document.getElementById("username").value ;
+    let password = document.getElementById("password").value ;
+    
+    if ((username.length < 3) || (password.length < 3)){
 
-    user = prompt("Enter your user");
-    pwrd = prompt("Enter your password");
+        document.getElementById("size").style.display = "block";
 
+    } else if((username!=="manuel")||(password!=="dejame")){
 
-    if((user!=="Manuel")||(pwrd!=="dejapaso")){
-        alert("Incorrect credentials.") ;
-        retry = confirm("Would you like to try again?") ;
-
-        if(retry === true){
-            login() ;
-        }
+        document.getElementById("incorrect").style.display = "block";
 
     } else {
 
-        document.getElementById("mainContent").style.display = "block";
+        document.getElementById("incorrect").style.display = "none";
+        document.getElementById("correct").style.display = "block";
+
+        const myTimeout = setTimeout(runSite, 2000);
+
+        function runSite() {
+            document.getElementById("login").style.display = "none";
+            document.getElementById("mainContent").style.display = "block";
+        }
 
     }
 
 }
 
-
-window.onload = function () { 
-    login(); 
-};

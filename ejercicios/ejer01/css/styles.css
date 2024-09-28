@@ -55,7 +55,7 @@ button{
 
 .col-4{padding: 4%;}
 
-.grid-4{
+.grid-3{
     display: grid;
     grid-template-columns: 70%;
 

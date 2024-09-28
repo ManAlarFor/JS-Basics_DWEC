@@ -11,31 +11,56 @@
 </head>
 <body>
 
-    <div id="mainContent" style="display: none;">
-
-        <div id="superior">
-
-            <div id="grid-titulo">
-
-                <h1 id="titulo">Examples - JS Basics</h1>
-
-                <img id="mifoto" src="./img/mifoto.jpeg" alt="">
-
-            </div>
-
+    
+    <div id="superior">
+        
+        <div id="grid-titulo">
+            
+            <h1 id="titulo">Examples - JS Basics</h1>
+            
+            <img id="mifoto" src="./img/mifoto.jpeg" alt="">
             
         </div>
         
-        <nav>
-            <div class="topnav" id="myTopnav">
-                <a href="https://github.com/ManAlarFor/JS-Basics_DWEC">Repository</a>
-                </a>
-            </div>
-        </nav>
+        
+    </div>
+    
+    <nav>
+        <div class="topnav" id="myTopnav">
+            <a href="https://github.com/ManAlarFor/JS-Basics_DWEC">Repository</a>
+        </a>
+        </div>
+    </nav>
 
-        <div class="cardsection grid-4">
+    <div id="login" style="display: block;">
+        <div class="cardsection grid-3">
 
+                
                 <div class="col-4  ">
+
+                    <div class="card log">
+                        <h2>Log In</h2>
+                        <div id="loginForm">
+                            <label for="username">Username:</label><br>
+                            <input type="text" id="username" name="username" placeholder="manuel" required><br><br>
+                            <label for="password">Password:</label><br>
+                            <input type="password" id="password" name="password" placeholder="dejame" required><br><br>
+                            <button onclick="return login()">Enter</button>
+                        </div>
+                        <p id="correct" style="display: none; color: green;">Welcome!</p>
+                        <p id="size" style="display: none; color: red;">Both credentials must be at least 3 characters long!</p>
+                        <p id="incorrect" style="display: none; color: red;">Wrong credentials</p>
+                    </div>
+
+                </div>
+
+        </div>
+    </div>
+
+    <div id="mainContent" style="display: none;">
+        <div class="cardsection grid-3">
+
+                <div class="col-4">
                     
                     <div class="card">
                         <h2>Exercise 1</h2>
@@ -63,6 +88,7 @@
                 </div>
 
             </div>
+    </div>
 
             
             <footer id="foot">
@@ -72,8 +98,7 @@
             </footer>
             
             
-        </div>
-    </div>
+
 
 
 </body>

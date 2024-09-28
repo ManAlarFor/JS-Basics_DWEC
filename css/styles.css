@@ -7,6 +7,7 @@
     padding-top: 3%;
     padding-bottom: 3%;
     background-color: palegoldenrod;
+
 }
 
 #mifoto{
@@ -73,6 +74,7 @@ button{
 
 }
 
+
 .card{
     width: 70%;
     border: 1px solid rgb(245, 240, 195);
@@ -92,7 +94,8 @@ button{
 
 .col-4{padding: 4%;}
 
-.grid-4{
+
+.grid-3{
     display: grid;
     grid-template-columns: 33% 33% 33%;
 
@@ -103,13 +106,20 @@ button{
 
 }
 
+.log{
+    position: relative;
+
+    left: 120%;
+}
+
+
 /*****************************************************/
-/*                      Cards                        */
+/*                 Responsivity                      */
 /*****************************************************/
 
 @media only screen and (width<900px) {
 
-    .grid-4{
+    .grid-3{
         grid-template-columns: 100%;
     
         padding-top: 8% ;
@@ -126,6 +136,10 @@ button{
         height: 100px;
 
         padding-left: 40%;
+    }
+
+    .log{
+        left: 0%;
     }
 
 }
