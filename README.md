@@ -15,13 +15,13 @@ En esta página hay tres cards con enlaces a distintos ejemplos. Tanto esta pág
 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
- There's a menu button that deploys a list of links. By the moment, the only existing link is the link to this repository. 
+ There's a menu button that deploys a list of links, which is simbolized by an Bootstrap Icon. By the moment, the only existing link is the link to this repository. 
 
 All these pages are responsive thanks to Bootstrap and its integrated functionalities.
 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-Hay un botón de menú que despliega una lista de enlaces. Por ahora, el único enlace existente es el enlace a este repositorio. 
+Hay un botón de menú que despliega una lista de enlaces, simbolizado por un icono de Bootstrap. Por ahora, el único enlace existente es el enlace a este repositorio. 
 
 Estas páginas son responsivas gracias a Bootstrap y a sus funcionalidades integradas.
 
@@ -33,10 +33,10 @@ Estas páginas son responsivas gracias a Bootstrap y a sus funcionalidades integ
 
 <h2>First and Second example</h2>
 
-This page contains a button which, when pressed, changes the text below, saying that it's the exercise's solution. It works in a refactored way, which makes it easier to reuse the code in the future.
+This page contains a button which, when pressed, changes the text below, saying that it's the exercise's solution. It works in a refactored way, which makes it easier to reuse the code in the future. It is possible to go back to the main page with the arrow displayed next to the title.
 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-Esta página contiene un botón, que cuando es pulsado, cambia el texto inferior, sustituyéndolo por uno que dice que es la solución de este ejercicio. Es un código refactorizado que facilita su utilización en el futuro.
+Esta página contiene un botón, que cuando es pulsado, cambia el texto inferior, sustituyéndolo por uno que dice que es la solución de este ejercicio. Es un código refactorizado que facilita su utilización en el futuro. Se puede volver a la página inicial pulsando la flecha que aparece al lado del título.
 
 <img src="./img/exercise1.png">
