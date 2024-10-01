@@ -11,6 +11,7 @@ En esta página hay tres cards con enlaces a distintos ejemplos. Tanto esta pág
 
 <img src="./img/LandPageLogin.png">
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
  There's a menu button that deploys a list of links. By the moment, the only existing link is the link to this repository. 
@@ -26,6 +27,7 @@ Estas páginas son responsivas gracias a Bootstrap y a sus funcionalidades integ
 <img src="./img/LandPage.png">
 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 <h2>First and Second example</h2>
