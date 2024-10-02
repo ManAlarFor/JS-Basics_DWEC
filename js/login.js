@@ -1,5 +1,9 @@
 "use strict"
 
+
+/**
+ * Controls the login, if incorrect of shorter than 3 a message is displayed
+ */
 function login(){
     document.getElementById("size").style.display = "none";
     document.getElementById("incorrect").style.display = "none";
