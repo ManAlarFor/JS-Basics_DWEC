@@ -23,11 +23,8 @@
     background-color:blueviolet;
 }
 
-.border-blVio{
-    border: 1px solid blueviolet!important;
-}
-
 .border-blVio:hover{
+    border: 2px solid blueviolet!important;
     background-color: white !important;
     color: black !important;
 }

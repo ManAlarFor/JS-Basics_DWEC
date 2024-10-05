@@ -27,8 +27,7 @@ function login(){
         const myTimeout = setTimeout(runSite, 2000);
 
         function runSite() {
-            document.getElementById("login").style.display = "none";
-            document.getElementById("mainContent").style.display = "block";
+            window.location.replace("./ejercicios/main.html")
         }
 
     }
