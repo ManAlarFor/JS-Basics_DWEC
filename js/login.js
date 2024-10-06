@@ -5,35 +5,37 @@
  * Controls the login, if incorrect of shorter than 3 a message is displayed
  */
 function login(){
-    document.getElementById("size").style.display = "none";
-    document.getElementById("incorrect").style.display = "none";
+
+    document.getElementById("incorrect").innerHTML = "";
 
     let username = document.getElementById("username").value ;
     let password = document.getElementById("password").value ;
     
     if ((username.length < 3) || (password.length < 3)){
 
-        document.getElementById("size").style.display = "block";
+        document.getElementById("incorrect").innerHTML = "The password must be 3 at least 3 characters long";
 
     } else if((username!=="manuel")||(password!=="dejame")){
 
-        document.getElementById("incorrect").style.display = "block";
+        document.getElementById("incorrect").innerHTML = "Wrong credentials";
 
     } else {
 
-        document.getElementById("incorrect").style.display = "none";
-        document.getElementById("correct").style.display = "block";
+        document.getElementById("correct").innerHTML = "Welcome!";
 
         const myTimeout = setTimeout(runSite, 2000);
-
-        function runSite() {
-            window.location.replace("./ejercicios/main.html")
-        }
 
     }
 
     document.getElementById("username").value = "";
     document.getElementById("password").value = "";
+
+    function runSite() {
+
+        setCookie(username, password, 1) ;
+
+        window.location.replace("./ejercicios/main.html") ;
+    }
 
 }
 

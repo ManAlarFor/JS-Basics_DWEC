@@ -23,12 +23,15 @@
     background-color:blueviolet;
 }
 
-.border-blVio:hover{
-    border: 2px solid blueviolet!important;
+.border-menu{
+    border-radius: 7px;
+}
+
+.border-menu:hover{
     background-color: white !important;
     color: black !important;
 }
 
 .btn-dark:hover{
-    background-color: rgb(216, 179, 220) !important;
+    background-color: rgb(243, 140, 255) !important;
 }

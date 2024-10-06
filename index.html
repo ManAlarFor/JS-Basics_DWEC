@@ -10,6 +10,7 @@
     <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <script defer src="./js/login.js"></script>
+    <script defer src="./js/setCookie.js"></script>
 </head>
 <body>
 
@@ -42,9 +43,10 @@
                                 <input type="password" id="password" name="password" placeholder="dejame" required><br><br>
                                 <button onclick="return login()" class="btn btn-dark">Enter</button>
                             </div>
-                            <p class="pt-3" id="correct" style="display: none; color: green;">Welcome!</p>
-                            <p class="pt-3" id="size" style="display: none; color: red;">Both credentials must be at least 3 characters long!</p>
-                            <p class="pt-3" id="incorrect" style="display: none; color: red;">Wrong credentials</p>
+                            <div class="pt-3">
+                                <p class="text-success" id="correct"></p>
+                                <p class="text-danger" id="incorrect"></p>
+                            </div>
                         </div>
                         
                     </div>
@@ -57,18 +59,14 @@
 
     <!-- Footer -->
 
-    <footer class="bg-dark text-light text-center">
+    <footer class="bg-dark fixed-bottom text-light text-center">
         
         <div>
-            <h2 class="pt-2 pb-2">Manuel Alarcón Fortes</h2>
+            <h3 class="pt-2 pb-2">Manuel Alarcón Fortes</h3>
         </div>
 
         <div>
             <img src="./img/mifoto.jpeg" class="figure-img img-fluid size">
-        </div>
-
-        <div>
-            <p class="pt-3 pb-3">Hi there! My name is Manuel and I am hoping to learn new programming and designing technics</p>
         </div>
 
     </footer>
