@@ -12,6 +12,10 @@ function convert(base) {
 
         document.getElementById("result").innerHTML = `Wrong format introduced`;
 
+    } else if (isNaN(num)){ 
+
+        document.getElementById("result").innerHTML = "No data provided";
+
     } else {
 
         let result = num.toString(base).toUpperCase() ;
