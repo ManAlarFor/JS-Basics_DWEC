@@ -1,6 +1,7 @@
 "use strict"
 
-window.onload = checkCookie() ;
+let check = document.cookie ;
 
-function checkCookie() {
+if(!check) {
+    window.location.replace("../index.html")
 }

@@ -13,7 +13,7 @@ function setCookie(name, value, minutes) {
 
     let now = new Date() ;
 
-    now.setTime(now.getTime() + (minutes * 30 * 1000));
+    now.setTime(now.getTime() + (minutes * 10 * 1000));
 
     let expires = now.toUTCString() ;
 
