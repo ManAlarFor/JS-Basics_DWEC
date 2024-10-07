@@ -1,13 +1,17 @@
 "use strict"
 
+/**
+ * Creates a cookie with a given name, value and minutes
+ * @param {*} name 
+ * @param {*} value 
+ * @param {*} minutes 
+ */
 function setCookie(name, value, minutes) {
 
     name.trim() ;
-    value.trim() ;
+    value = encodeURIComponent(value.trim()) ;
 
     let now = new Date() ;
-
-    value = encodeURIComponent(value) ;
 
     now.setTime(now.getTime() + (minutes * 30 * 1000));
 

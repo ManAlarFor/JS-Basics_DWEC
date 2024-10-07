@@ -9,7 +9,15 @@ function calc(simbol) {
     let op1 = parseFloat(document.getElementById('op1').value) ;
     let op2 = parseFloat(document.getElementById('op2').value) ;
 
-    let result ;
+
+    if(typeof(op1)!="number"||typeof(op2)!="number") {
+
+        document.getElementById("result").innerHTML = "Wrong format introduced";
+
+    } else {
+
+        let result ;
+
 
         switch(simbol) {
 
@@ -45,12 +53,10 @@ function calc(simbol) {
 
             //factorial of op1
             case '!' :
-
                 result = 1 ;
+
                 for (let i = op1; i > 0 ; i--) {
-
                     result *= i ;
-
                 }
                 break ;
 
@@ -67,4 +73,6 @@ function calc(simbol) {
         } 
 
         solution(result) ;
+
+    }
 }

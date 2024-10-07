@@ -8,8 +8,16 @@ function convert(base) {
 
     let num = parseFloat(document.getElementById('dec').value) ;
 
-    let result = num.toString(base).toUpperCase() ;
+    if(typeof(num)!="number") {
 
-    document.getElementById("result").innerHTML = `${num} in base ${base} is ${result}`;
+        document.getElementById("result").innerHTML = `Wrong format introduced`;
+
+    } else {
+
+        let result = num.toString(base).toUpperCase() ;
+
+        document.getElementById("result").innerHTML = `${num} in base ${base} is ${result}`;
+
+    }
 
 }

@@ -17,14 +17,14 @@
     width: 100px;
 }
 
+.border-menu{
+    border-radius: 7px;
+}
+
 /*********Colores****************/
 
 .bg-blVio{
     background-color:blueviolet;
-}
-
-.border-menu{
-    border-radius: 7px;
 }
 
 .border-menu:hover{

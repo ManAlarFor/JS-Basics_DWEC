@@ -1,5 +1,9 @@
 "use strict"
 
+/**
+ * Shows the value of the mini-calculator and controls any errors
+ * @param {*} result 
+ */
 function solution(result) {
 
     if(isNaN(result)){

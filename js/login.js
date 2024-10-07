@@ -1,6 +1,5 @@
 "use strict"
 
-
 /**
  * Controls the login, if incorrect of shorter than 3 a message is displayed
  */
@@ -10,7 +9,8 @@ function login(){
 
     let username = document.getElementById("username").value ;
     let password = document.getElementById("password").value ;
-    
+
+
     if ((username.length < 3) || (password.length < 3)){
 
         document.getElementById("incorrect").innerHTML = "The password must be 3 at least 3 characters long";
@@ -30,6 +30,9 @@ function login(){
     document.getElementById("username").value = "";
     document.getElementById("password").value = "";
 
+    /**
+     * Runs the site and calls the cookie setter
+     */
     function runSite() {
 
         setCookie(username, password, 1) ;

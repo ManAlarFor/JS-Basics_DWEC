@@ -1,5 +1,10 @@
 "use strict"
 
+/**
+ * Returns the value of a cookie by its name
+ * @param {*} name 
+ * @returns string 
+ */
 function getCookie(name) {
 
     let start ;
@@ -19,7 +24,10 @@ function getCookie(name) {
             }
 
             return decodeURI(document.cookie.substring(start, end));
+
         }
     }
+
     return "";
+
 }
