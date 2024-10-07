@@ -21,7 +21,7 @@ function login(){
 
     } else {
 
-        document.getElementById("correct").innerHTML = "Welcome!";
+        document.getElementById("correct").innerHTML = `Welcome,${username}!` ;
 
         const myTimeout = setTimeout(runSite, 2000);
 
