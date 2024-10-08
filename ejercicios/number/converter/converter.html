@@ -54,37 +54,47 @@
 
                     <div class="container">
 
-                        <!-- Number Input -->
-
                         <div class="row">
 
                             <div class="col">
-                                <label for="dec">Decimal Base Number:</label>
-                                <input id="dec" name="decnum" type="number">
+
+                                <!-- Number Input -->
+
+                                <div class="row">
+                                    <label for="dec">Decimal Base Number:</label>
+                                    <input id="dec" name="decnum" type="number">
+                                </div>
+
+                                <!-- Solution -->
+                                <div class="row mt-5">
+                                    <p id="result"></p>
+                                </div>
+
                             </div>
 
-                        </div>
 
-                        <!-- Base Changes Optionss -->
+                            <!-- Base Convertion Options -->
 
-                        <div class="row m-5">
+                            <div class="col">
+                                <div class="row mb-2">
+                                    <div class="col">
+                                        <button onclick="return convert(2)" class="rounded-2 p-2 fs-5">/2</button>
+                                    </div>
+                                </div>
 
-                            <div class="col-4">
-                                <button onclick="return convert(2)" class="rounded-2 p-3 fs-5">/2</button>
+                                <div class="row mb-2">
+                                    <div class="col">
+                                        <button onclick="return convert(8)" class="rounded-2 p-2 fs-5">/8</button>
+                                    </div>
+                                </div>
+
+                                <div class="row mb-2">
+                                    <div class="col">
+                                        <button onclick="return convert(16)" class="rounded-2 p-2 fs-5">/16</button>
+                                    </div>
+                                </div>
                             </div>
 
-                            <div class="col-4">
-                                <button onclick="return convert(8)" class="rounded-2 p-3 fs-5">/8</button>
-                            </div>
-
-                            <div class="col-4">
-                                <button onclick="return convert(16)" class="rounded-2 p-3 fs-5">/16</button>
-                            </div>
-
-                        </div>
-
-                        <div class="row m-3 strong">
-                            <p id="result"></p>
                         </div>
 
                     </div>

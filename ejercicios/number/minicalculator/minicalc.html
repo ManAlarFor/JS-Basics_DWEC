@@ -57,76 +57,85 @@
                         <div class="container">
                             <div class="row">
 
-                                <!-- Number Inputs -->
-
                                 <div class="col">
-                                    <label for="op1">1st Operand:</label>
-                                    <input id="op1" name="oper1" type="number">
-                                </div>
+                                    <!-- Number Inputs -->
+                                    <div class="row">
+                                        <label for="op1">1st Operand:</label>
+                                        <input id="op1" name="oper1" type="number">
+                                    </div>
 
-                                <div class="col">
-                                    <label for="op2">2nd Operand:</label>
-                                    <input id="op2" name="oper2" type="number">
-                                </div>
+                                    <div class="row">
+                                        <label for="op2">2nd Operand:</label>
+                                        <input id="op2" name="oper2" type="number">
+                                    </div>
+                                    
+                                    <!-- Solution -->
+                                    <div class="row m-3 strong">
+                                        <p id="result"></p>
+                                    </div>
 
-                            </div>
-
-
-                            <!-- Calc Options -->
-
-                            <div class="row m-4">
-
-                                <div class="col">
-                                    <button onclick="return calc('+')" class="rounded-2 p-2">+</button>
                                 </div>
 
 
-                                <div class="col">
-                                    <button onclick="return calc('-')" class="rounded-2 p-2">-</button>
-                                </div>
-
-
-                                <div class="col">
-                                    <button onclick="return calc('*')" class="rounded-2 p-2">*</button>
-                                </div>
-
-
-                                <div class="col">
-                                    <button onclick="return calc('/')" class="rounded-2 p-2">/</button>
-                                </div>
-                            </div>
-
-
-                            <div class="row m-4">
-
-                                <div class="col">
-                                    <button onclick="return calc('_.')" class="rounded-2 p-2">_.</button>
-                                </div>
-
-
-                                <div class="col">
-                                    <button onclick="return calc('._')" class="rounded-2 p-2">._</button>
-                                </div>
-
-
-                                <div class="col">
-                                    <button onclick="return calc('!')" class="rounded-2 p-2">!</button>
-                                </div>
+                                <!-- Calculation Options -->
 
                                 <div class="col">
 
-                                    <button onclick="return calc('√')" class="rounded-2 p-2">√</button>
+                                    <div class="row mb-2">
+
+                                        <div class="col">
+                                            <button onclick="return calc('+')" class="rounded-2 p-2">+</button>
+                                        </div>
+
+
+                                        <div class="col">
+                                            <button onclick="return calc('-')" class="rounded-2 p-2">-</button>
+                                        </div>
+
+
+                                        <div class="col">
+                                            <button onclick="return calc('*')" class="rounded-2 p-2">*</button>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="row mb-2">
+
+                                        <div class="col">
+                                            <button onclick="return calc('/')" class="rounded-2 p-2">/</button>
+                                        </div>
+
+
+                                        <div class="col">
+                                            <button onclick="return calc('_.')" class="rounded-2 p-2">_.</button>
+                                        </div>
+
+
+                                        <div class="col">
+                                            <button onclick="return calc('._')" class="rounded-2 p-2">._</button>
+                                        </div>
+
+                                    </div>
+
+
+                                    <div class="row mb-2">
+
+                                        <div class="col">
+                                            <button onclick="return calc('!')" class="rounded-2 p-2">!</button>
+                                        </div>
+
+                                        <div class="col">
+                                            <button onclick="return calc('√')" class="rounded-2 p-2">√</button>
+                                        </div>
+
+                                        <div class="col">
+                                            <button onclick="return calc('^')" class="rounded-2 p-2">^</button>
+                                        </div>
+
+                                    </div>
 
                                 </div>
 
-                                <div class="col">
-                                    <button onclick="return calc('^')" class="rounded-2 p-2">^</button>
-                                </div>
-
-                            </div>
-
-                            <div class="row m-3 strong">
-                                <p id="result"></p>
                             </div>
 
                         </div>
