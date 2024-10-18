@@ -6,9 +6,12 @@
  */
 function change(type) {
 
-    document.getElementById("mainContent").style.display = "none";
-    document.getElementById(type).style.display = "block";
+    let div = document.getElementsByClassName("content");
 
-    console.log(getCookie("manuel")) ;
+    for (let i = 0; i < div.length; i++) {
+        div[i].style.display = "none";
+    }
+
+    document.getElementById(type).style.display = "block";
 
 }
