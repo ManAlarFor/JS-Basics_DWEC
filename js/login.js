@@ -35,7 +35,7 @@ function login(){
      */
     function runSite() {
 
-        setCookie(username, password, 1) ;
+        setSessionStorage(username, password) ;
 
         window.location.replace("./ejercicios/main.html") ;
     }

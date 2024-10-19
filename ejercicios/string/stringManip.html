@@ -14,6 +14,8 @@
     <script defer src="../../js/upper.js"></script>
     <script defer src="../../js/lower.js"></script>
     <script defer src="../../js/manip.js"></script>
+    <script defer src="../../js/movieAPI.js"></script>
+    <script defer src="../../js/imgDisplay.js"></script>
     <script defer src="../../js/generate.js"></script>
 </head>
 
@@ -128,6 +130,8 @@
 
                                     </div>
 
+                                    <!-- Random Generation Options -->
+
                                     <div class="row mb-2 mt-4">
 
                                         <div class="col">
@@ -151,9 +155,38 @@
 
                                 </div>
 
+                                
+
                             </div>
 
                         </div>
+
+                        <!-- Movie Poster Display -->
+
+                        <div class="row m-2">
+
+                            <div class="col"></div>
+
+                            <div class="col">
+                                <button onclick="return showImage()" class="rounded-2">Show Movie Poster</button>
+                            </div>
+
+                            <div class="col"></div>
+
+                        </div>
+
+                        <div class="row m-2">
+
+                            <div class="col"></div>
+
+                            <div class="col">
+                                <img style="display: none;" id="image" src="" alt="">
+                            </div>
+
+                            <div class="col"></div>
+
+                        </div>
+
                     </div>
                 </div>
 
