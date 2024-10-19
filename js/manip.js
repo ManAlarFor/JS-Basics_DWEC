@@ -3,6 +3,10 @@
     let repeat ;
     let seconds = 1 ;
 
+/**
+ * Dependening on the given input, calls a different character change function
+ * @param {*} typeChange 
+ */
 function stringMod(typeChange) {
 
     let text = document.getElementById("text").value ;
@@ -73,5 +77,6 @@ function stringMod(typeChange) {
 
         }
 
+    // Changes the content in the textarea into the given result
     document.getElementById("text").value = text ;
 }

@@ -1,9 +1,12 @@
 "use strict"
 
+/**
+ * Deletes a element of the Storage by it's name
+ * @param {*} name 
+ */
 function eraseSessionStorage(name) {
 
     sessionStorage.removeItem(name);
-    console.log(`sessionStorage: Eliminada la clave ${name}`);
 
     window.location.replace("../index.html")
 

@@ -4,7 +4,13 @@ const button = document.getElementById('button');
 
 let text = document.getElementById("text") ;
 
-const url = 'https://imdb188.p.rapidapi.com/api/v1/getPopularMovies';
+/**
+ * Takes a random movie from the given elements of the API 
+ * and displays some information about it in the textarea
+ */
+async function movie() {
+
+    const url = 'https://imdb188.p.rapidapi.com/api/v1/getPopularMovies';
         const options = {
             method: 'POST',
             headers: {
@@ -30,9 +36,6 @@ const url = 'https://imdb188.p.rapidapi.com/api/v1/getPopularMovies';
             })
         };
 
-async function movie() {
-
-
     text.value = "Loading Content..." ;
 
     stringMod(12) ;
@@ -48,14 +51,12 @@ async function movie() {
         }
 
         const data = await response.json();
-        console.log(data) ;
 
         const min = 0;
 
         const max = data.data.list.length-1;
 
         let change = Math.floor(Math.random() * (max - min + 1) + min);
-
 
         text.value = `The movie "${data.data.list[change].title.titleText.text}" was released in ${data.data.list[change].title.releaseYear.year}`;
 
