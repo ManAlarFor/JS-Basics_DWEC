@@ -2,7 +2,7 @@
 
 /**
  * Turns every character to upper case
- * @param {*} text 
+ * @param {string} text 
  * @returns 
  */
 function toUpper(text) {
@@ -11,7 +11,7 @@ function toUpper(text) {
 
 /**
  * Turns every words' first character into upper case
- * @param {*} text 
+ * @param {string} text 
  * @returns 
  */
 function firstUpper(text) {
@@ -34,7 +34,7 @@ function firstUpper(text) {
 
 /**
  * Turns every words' last character into upper case
- * @param {*} text 
+ * @param {string} text 
  * @returns 
  */
 function lastUpper(text) {
@@ -57,7 +57,7 @@ function lastUpper(text) {
 
 /**
  * Turns every vowel into upper case
- * @param {*} text 
+ * @param {string} text 
  * @returns 
  */
 function vowelUpper(text) {
@@ -80,7 +80,7 @@ function vowelUpper(text) {
 
 /**
  * Turns every consonant into upper case
- * @param {*} text 
+ * @param {string} text 
  * @returns 
  */
 function consonantUpper(text) {

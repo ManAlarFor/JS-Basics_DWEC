@@ -5,7 +5,7 @@
 
 /**
  * Dependening on the given input, calls a different character change function
- * @param {*} typeChange 
+ * @param {int} typeChange 
  */
 function stringMod(typeChange) {
 

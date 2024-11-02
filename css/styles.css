@@ -1,4 +1,14 @@
 
+
+.size{
+    width: 100px;
+}
+
+.border-menu{
+    border-radius: 7px;
+}
+
+/*********Cards******************/
 .card{
     box-shadow: 2px 2px 2px black;
 }
@@ -13,13 +23,6 @@
     padding-bottom: 3%;
 }
 
-.size{
-    width: 100px;
-}
-
-.border-menu{
-    border-radius: 7px;
-}
 
 /*********Colores****************/
 

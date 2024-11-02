@@ -1,5 +1,8 @@
 "use strict"
 
+/**
+ * Deleted an element in the indexedDB
+ */
 function indexedDBDelete() {
 
     const transaction = db.transaction(['miAlmacen'], 'readwrite');
@@ -9,14 +12,12 @@ function indexedDBDelete() {
 
     request.onsuccess = function(event) {
         const result = event.target.result;
+
+        // Error Handler
         if (result) {
             const deleteRequest = almacen.delete(result.user);
             deleteRequest.onsuccess = function() {
-                console.log('Usuario eliminado exitosamente');
                 window.location.replace("../index.html");
-            };
-            deleteRequest.onerror = function() {
-                console.error('Error al eliminar el usuario');
             };
         } else {
             console.log('No se encontró el usuario para eliminar');

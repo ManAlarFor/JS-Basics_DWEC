@@ -1,5 +1,9 @@
 "use strict"
 
+/**
+ * Inicialates the indexedDB
+ */
+
 let db;
 const request = indexedDB.open('MiBaseDeDatos', 1);
 

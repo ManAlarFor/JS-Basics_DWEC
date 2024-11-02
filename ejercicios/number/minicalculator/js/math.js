@@ -10,6 +10,7 @@ function calc(simbol) {
     let op2 = parseFloat(document.getElementById('op2').value) ;
 
 
+    // Error Handler
     if(typeof(op1)!="number"||typeof(op2)!="number") {
 
         document.getElementById("result").innerHTML = "Wrong format introduced";

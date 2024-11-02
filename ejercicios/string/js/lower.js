@@ -2,7 +2,7 @@
 
 /**
  * Turns every character to lower case
- * @param {*} text 
+ * @param {string} text 
  * @returns 
  */
 function toLower(text) {
@@ -11,7 +11,7 @@ function toLower(text) {
 
 /**
  * Turns every words' first character into lower case
- * @param {*} text 
+ * @param {string} text 
  * @returns 
  */
 function firstLower(text) {
@@ -34,7 +34,7 @@ function firstLower(text) {
 
 /**
  * Turns every words' last character into lower case
- * @param {*} text 
+ * @param {string} text 
  * @returns 
  */
 function lastLower(text) {
@@ -57,7 +57,7 @@ function lastLower(text) {
 
 /**
  * Turns every vowel into lower case
- * @param {*} text 
+ * @param {string} text 
  * @returns 
  */
 function vowelLower(text) {
@@ -80,7 +80,7 @@ function vowelLower(text) {
 
 /**
  * Turns every consonant into lower case
- * @param {*} text 
+ * @param {string} text 
  * @returns 
  */
 function consonantLower(text) {

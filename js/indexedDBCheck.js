@@ -15,6 +15,7 @@ function indexedDBCheck(){
     request.onsuccess = function(event) {
         const result = event.target.result; 
 
+        // Error handler
         if (result) {
             console.log('Datos obtenidos:', result);
         } else {

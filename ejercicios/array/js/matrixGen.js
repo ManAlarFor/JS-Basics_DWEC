@@ -14,8 +14,16 @@ function randomValue(){
 
 }
 
+/**
+ * Displays the matrixes in the page by the given values, size and caption
+ * @param {array} values 
+ * @param {number} size 
+ * @param {string} caption 
+ * @returns array
+ */
 function matrixGen(values, size, caption) {
 
+    //Start creating the html table by creating elements and appending childs
     document.getElementById("result").innerHTML = "" ;
 
     let matrix = document.createElement("table");

@@ -1,5 +1,8 @@
 "use strict"
 
+/**
+ * Sets the order of actions the testing should follow
+ */
 function test() {
 
     let math = randomNum(0,2) ;
@@ -7,6 +10,7 @@ function test() {
     randomValue() ;
     firstMatrixes() ;
 
+    // Uses the random number to do a random action
     switch(math) {
 
         case 0:

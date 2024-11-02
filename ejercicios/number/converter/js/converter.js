@@ -8,6 +8,7 @@ function convert(base) {
 
     let num = parseFloat(document.getElementById('dec').value) ;
 
+    // Error handling
     if(typeof(num)!="number") {
 
         document.getElementById("result").innerHTML = `Wrong format introduced`;

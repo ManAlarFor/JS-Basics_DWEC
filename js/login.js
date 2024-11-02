@@ -31,7 +31,7 @@ function login(){
     document.getElementById("password").value = "";
 
     /**
-     * Runs the site and calls the session storage setter
+     * Runs the site and calls the indexedDB element adder
      */
     function runSite() {
 

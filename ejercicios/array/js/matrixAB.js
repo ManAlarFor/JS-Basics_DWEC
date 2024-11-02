@@ -1,11 +1,16 @@
 "use strict"
 
+/**
+ * This function creates the first two matrixes by the given parameters by the input fields 
+ */
 function firstMatrixes() {
 
+    // Getting the parameters
     let size    = document.getElementById("size").value ;
     let minRand = document.getElementById("minRand").value ;
     let maxRand = document.getElementById("maxRand").value ;
 
+    // Error handling
     if( minRand == "" || maxRand == "" || size == "") {
 
         document.getElementById("error").innerHTML = "All fields must be filled" ;
@@ -35,6 +40,7 @@ function firstMatrixes() {
             let matrixAValues = [] ;
             let matrixBValues = [] ;
 
+            // Filling up the matrixes
             for(let i = 0 ; i < size ; i++){
 
                 matrixAValues[i] = [] ;
@@ -47,6 +53,8 @@ function firstMatrixes() {
 
                 }
             }
+
+            // Displaying the matrixes
 
             let matrixA = matrixGen(matrixAValues, size, "Matrix A") ;
             let matrixB = matrixGen(matrixBValues, size, "Matrix B") ;

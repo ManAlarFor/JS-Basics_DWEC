@@ -2,8 +2,8 @@
 
 /**
  * Adds an element to the Session Storage
- * @param {*} name 
- * @param {*} value 
+ * @param {string} name 
+ * @param {string} value 
  */
 function indexedDBPut(name, value) {
 

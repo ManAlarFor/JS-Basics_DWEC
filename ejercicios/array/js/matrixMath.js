@@ -1,5 +1,8 @@
 "use strict"
 
+/**
+ * Adds MatrixA and MatrixB, and displays the result
+ */
 function matrixAdd() {
 
 
@@ -25,9 +28,12 @@ function matrixAdd() {
     document.getElementById("result").innerHTML = "" ;
     document.getElementById("result").appendChild(result) ;
 
-
 }
 
+
+/**
+ * Substracts MatrixB to MatrixA, and displays the result
+ */
 function matrixSubs() {
 
 
@@ -54,9 +60,12 @@ function matrixSubs() {
     document.getElementById("result").innerHTML = "" ;
     document.getElementById("result").appendChild(result) ;
 
-
 }
 
+
+/**
+ * Multiplies MatrixA and MatrixB, and displays the result
+ */
 function matrixMult() {
 
 
@@ -74,6 +83,7 @@ function matrixMult() {
 
             value = 0 ;
 
+            // Multiplies the value and adds it to value to assign them to result
             for(let k = 0 ; k < size ; k++) {
 
                 value += (matrixA[i][k] * matrixB[k][j]) ;
@@ -92,9 +102,14 @@ function matrixMult() {
     document.getElementById("result").innerHTML = "" ;
     document.getElementById("result").appendChild(result) ;
 
-
 }
 
+
+/**
+ * Gets the data from the tables from the page by the given id and returns it as an array of integers
+ * @param {string} containerId 
+ * @returns array
+ */
 function recieveData(containerId) {
 
     let container = document.getElementById(containerId) ;

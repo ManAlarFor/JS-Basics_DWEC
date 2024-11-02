@@ -6,6 +6,7 @@
  */
 function solution(result) {
 
+    // Error handling
     if(isNaN(result)){
 
         document.getElementById("result").innerHTML = "No data provided";
