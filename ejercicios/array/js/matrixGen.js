@@ -16,6 +16,8 @@ function randomValue(){
 
 function matrixGen(values, size, caption) {
 
+    document.getElementById("result").innerHTML = "" ;
+
     let matrix = document.createElement("table");
 
     let title = document.createElement("caption") ;

@@ -61,7 +61,7 @@ function stringMod(typeChange) {
             break;
 
         case 13:
-                seconds-=0.25 ;
+                (seconds>0)?seconds-=0.25:seconds ;
                 repeat = clearInterval(repeat) ;
                 repeat = setInterval(() => generate(),seconds*1000) ;
             break;

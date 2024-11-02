@@ -14,6 +14,9 @@
 
     <script defer src="./js/matrixAB.js"></script>
     <script defer src="./js/matrixGen.js"></script>
+    <script defer src="./js/matrixMath.js"></script>
+    <script defer src="./js/matrixTest.js"></script>
+    <script defer src="./js/matrixManip.js"></script>
     <script defer src="../js/randomNum.js"></script>
 </head>
 
@@ -138,17 +141,17 @@
                                         <div class="row mb-2 mt-2">
 
                                             <div class="col">
-                                                <button onclick="return" class="rounded-2">Add Matrixes</button>
+                                                <button onclick="return matrixAdd()" class="rounded-2">Add Matrixes</button>
                                             </div>
                                         </div>
                                         <div class="row mb-2 mt-2">
 
                                             <div class="col">
-                                                <button onclick="return" class="rounded-2">Substract Matrixes</button>
+                                                <button onclick="return  matrixSubs()" class="rounded-2">Substract Matrixes</button>
                                             </div>
 
                                             <div class="col">
-                                                <button onclick="return" class="rounded-2">Multiply Matrixes</button>
+                                                <button onclick="return matrixMult()" class="rounded-2">Multiply Matrixes</button>
                                             </div>
 
                                         </div>
@@ -161,21 +164,21 @@
                                         <div class="row mb-2 mt-2">
 
                                             <div class="col">
-                                                <button onclick="return" class="rounded-2">Start Generation</button>
+                                                <button onclick="return testing('start')" class="rounded-2">Start Generation</button>
                                             </div>
 
                                             <div class="col">
-                                                <button onclick="return" class="rounded-2">Stop Generation</button>
+                                                <button onclick="return testing('stop')" class="rounded-2">Stop Generation</button>
                                             </div>
                                         </div>
                                         <div class="row mb-2 mt-2">
 
                                             <div class="col">
-                                                <button onclick="return" class="rounded-2">Faster Generation</button>
+                                                <button onclick="return testing('fast')" class="rounded-2">Faster Generation</button>
                                             </div>
 
                                             <div class="col">
-                                                <button onclick="return" class="rounded-2">Slower Generation</button>
+                                                <button onclick="return testing('slow')" class="rounded-2">Slower Generation</button>
                                             </div>
 
                                         </div>
