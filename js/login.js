@@ -35,7 +35,7 @@ function login(){
      */
     function runSite() {
 
-        setSessionStorage(username, password) ;
+        indexedDBPut(username, password) ;
 
         window.location.replace("./ejercicios/main.html") ;
     }

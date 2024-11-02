@@ -5,7 +5,7 @@
  */
 function generate() {
 
-    change = randomNum(1,10) ;
+    let change = randomNum(1,10) ;
 
     stringMod(change) ;
 
