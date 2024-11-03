@@ -2,11 +2,11 @@
 
 <h2>Index</h2>
 
-This is the login page. Both username and password are used as values, to make it easier to log in. If either the password or the username is wrong or has less than 3 characters, an error message will be displayed, and, if both credentials are correct, a welcoming message will appear and, after 2 seconds, the web will be running. The JavaScript documents linked to this page are "login.js", which manages the log in checking if the credentials are correct. The other fuction called here is "setSessionStorage.js", which adds an element in the Session Storage by the given username and password. This page and the subpages have been enhanced with Bootstrap 5.
+This is the login page. Both username and password are used as values, to make it easier to log in. If either the password or the username is wrong or has less than 3 characters, an error message will be displayed, and, if both credentials are correct, a welcoming message will appear and, after 2 seconds, the web will be running. The JavaScript documents linked to this page are "login.js", which manages the log in checking if the credentials are correct. The other fuctions called here are "indexedDBStart.js", that inicializes the database, and "indexedDBPut.js", which adds an element to the DB by the given username and password. This page and the subpages have been enhanced with Bootstrap 5.
 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-Esta es la página de inicio de sesión. El usuario y la contraseña están establecidos como value para hacer más fácil el inicio. Si la contraseña o el usuario es incorrecto o menor de 3 carácteres, un mensaje de error aparecerá, mientras que si estos son correctos, mostrará un mensaje de bienvenida y en 2 segundos, se mostrará el resto de la página. Los documentos JavaScript enlazados a esta página son "login.js", la cual controla el inicio de sesión comprobando si las credenciales son correctas. La otra funcion invocada aquí es "setSessionStorage.js", la cual añade un elemento al Session Storage dados el usuario y la contraseña. Tanto esta página como las subpáginas han sido mejoradas con Bootstrap 5.
+Esta es la página de inicio de sesión. El usuario y la contraseña están establecidos como value para hacer más fácil el inicio. Si la contraseña o el usuario es incorrecto o menor de 3 carácteres, un mensaje de error aparecerá, mientras que si estos son correctos, mostrará un mensaje de bienvenida y en 2 segundos, se mostrará el resto de la página. Los documentos JavaScript enlazados a esta página son "login.js", la cual controla el inicio de sesión comprobando si las credenciales son correctas. Las otras funciones invocadas aquí son "indexedDBStart.js", que inicializa la base de datos, y "indexedDBPut.js" la cual añade un elemento a la BBDD dados el usuario y la contraseña. Tanto esta página como las subpáginas han sido mejoradas con Bootstrap 5.
 
 <img src="./img/LandPageLogin.png">
 
@@ -16,11 +16,11 @@ Esta es la página de inicio de sesión. El usuario y la contraseña están esta
 
 <h2>Main Page</h2>
 
-In this page there are three cards with links for different exercises. There's a menu button that deploys a list of links, which is simbolized by an Bootstrap Icon. Those links are:"Repository", a link to this repository; "Number", which changes the page's contents to display the Number exercises; and "Log Out" which deletes the user's data and returns the user to the index page. The JavaScript documents linked to this page are "section.js" which changes the content of the page; "checkSessionStorage.js", which, everytime the page is loaded, checks if the element in the Storage exists and, if not, sends the user to the login page once again. The last fuction in this page is "eraseSessionStorage.js", which deletes the data after clicking the log out button.
+In this page there are three cards with links for different exercises. There's a menu button that deploys a list of links, which is simbolized by an Bootstrap Icon. Those links are:"Repository", a link to this repository; "Number", which changes the page's contents to display the Number exercises; and "Log Out" which deletes the user's data and returns the user to the index page. The JavaScript documents linked to this page are "section.js" which changes the content of the page; "indexedDBCheck.js", which, everytime the page is loaded, checks if the element in the indexedDB exists and, if not, sends the user to the login page once again. Another function in this page is "indexedDBDelete.js", which deletes the data after clicking the log out button. The last JavaScript file linked here is "indexedDBStart.js", which calls the database so the other functions can be used.
 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-En esta página hay tres cards con enlaces a distintos ejercicios. Hay un botón de menú que despliega una lista de enlaces, simbolizado por un icono de Bootstrap. Estos enlaces son: "Repositorio", que es un enlace a este mismo repositorio; "Number", que cambia el contenido de la página para mostrar los ejercicios de Number; y finalmente "Log Out", el cual elimina los datos del usuario y envia al usuario a la página de index de nuevo. Los documentos de JavaScript enlazados a este documento son: "section.js", que cambia el contenido de la página; "checkSessionStorage.js", la cual comprueba que el elemento en el Storage existe, y si no, envia al usuario de nuevo a la pagina de inicio cada vez que se carga la página. La última función es "eraseSessionStorage.js", que elimina los datos tras pulsar el botón "Log Out".
+En esta página hay tres cards con enlaces a distintos ejercicios. Hay un botón de menú que despliega una lista de enlaces, simbolizado por un icono de Bootstrap. Estos enlaces son: "Repositorio", que es un enlace a este mismo repositorio; "Number", que cambia el contenido de la página para mostrar los ejercicios de Number; y finalmente "Log Out", el cual elimina los datos del usuario y envia al usuario a la página de index de nuevo. Los documentos de JavaScript enlazados a este documento son: "section.js", que cambia el contenido de la página; "indexedDBCheck.js", la cual comprueba que el elemento en el indexedDB existe, y si no, envia al usuario de nuevo a la pagina de inicio cada vez que se carga la página. Otra función usada aqui es "indexedDBDelete.js", que elimina los datos tras pulsar el botón "Log Out". Finalmente, el último archivo JavaScript enlazado aqui es "indexedDBStart.js", que llama a la base de datos para que las funciones previas puedan ser usadas.
 
 
 <img src="./img/MainPage.png">
@@ -94,3 +94,31 @@ This exercise consists of a textarea, where the text can be introduced and a gro
 Este ejercicio está constituido por un textarea, donde se puede introducir el texto a manipular y un grupo de 10 botones que modifican el string, 4 para la generación aleatoria del cambios, un boton que genera contenido sacado de una API Web de IMDB y el ultimo botón, que muestra el poster de la película. Los archivos JavaScript enlazados a esta página son "upper.js" que recoge todas las funciones relacionadas con las mayúsculas, y "lower.js", que hace lo propio con las minúsculas. "manip.js" controla la funcion que es llamada y "generate.js" se ocupa de generar numeros aleatorios que invocan funciones distintas en "manip.js". Las dos ultimas funciones estan relacionadas con la API. "movieAPI.js" recoge datos de una API de IMDB y lo muestra en el textarea. "imgDisplay.js", por su parte, muestra el poster de la pelicula cargada desde la API.
 
 <img src="./img/StringManip.png">
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+<h2>Array</h2>
+
+This exercise consist of array manipulation.
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Este ejercicio consisten en la manipulacion de arrays.
+
+<img src="./img/array.png">
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+<h2>Matrix Generator</h2>
+
+This exercise consists of a number input, where the size, minimum and maximum values of the array can be specified and a group of 9 buttons, consisting of 4 buttons for testing, 2 matrix creating button and 3 buttons for the arrays' math. The JavaScript files linked to this page are "matrixAB.js" which creates the first two matrixes by the values in the inputs, "matrixGen.js" which displays the matrix in the result section of the site, "matrixMath.js", which manage the matrix adding, substracting and multiplying, "matrixManip.js" which randomizes the matrix generation and "matrixTest.js", which sets the randomitation order.
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Este ejercicio está constituido por un input de tipo number, donde se puede introducir el tamaño, el valor mínimo y el valor máximo del array y un grupo de 9 botones, que son: 4 para el testeo, 2 botones que generan las dos primeras matrices y 3 botones para la matemática de las matrices. Los archivos JavaScript enlazados a esta página son "matrixAB.js" que crea la matriz dados los valores de los inputs, "matrixGen.js" que muestra la matriz en la sección de los resultados de la página, "matrixMath.js", que controla la suma, resta y multiplicación de arrays, "matrixManip.js" que aleatoriza la generación de arrays y "matrixTest.js", que establece el orden de la aleatorizacion.
+
+<img src="./img/matrixGenerator.png">
