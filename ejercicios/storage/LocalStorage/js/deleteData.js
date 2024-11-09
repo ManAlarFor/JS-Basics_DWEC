@@ -1,5 +1,11 @@
 'use strict';
 
+/**
+ * Deletes the selected element of the table by the given name, surname and ages
+ * @param {string} name 
+ * @param {string} surname 
+ * @param {int} age 
+ */
 function deleteData(name,surname,age) {
 
     let newDatosAcceso = [];

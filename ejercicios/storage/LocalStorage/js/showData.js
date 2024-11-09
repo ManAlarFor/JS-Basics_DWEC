@@ -1,5 +1,8 @@
 'use strict';
 
+/**
+ * Shows the data storaged in LocalStorage
+ */
 function showData() {
 
     document.getElementById("table").innerHTML = "" ;

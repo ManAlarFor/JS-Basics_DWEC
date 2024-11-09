@@ -1,9 +1,15 @@
 'use strict';
 let data = [];
 
+/**
+ * Sends the data to the other functions
+ */
 function uploadData() {
 
+    //Regex to chexk if the introduced data is correct
     let noNumReg = /^([^0-9]*)$/ ;
+
+    //Error field reset
     document.getElementById("error").innerHTML = "" ;
 
     if (window.localStorage) {
@@ -11,6 +17,7 @@ function uploadData() {
         const surname   = document.getElementById("sur").value; 
         const age       = document.getElementById("age").value;
 
+        //Error Handling
         if(name == "" || surname == "" || age == ""){
 
             document.getElementById("error").innerHTML = "Los campos tienen que estar completos" ;
