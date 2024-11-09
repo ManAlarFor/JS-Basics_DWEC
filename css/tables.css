@@ -3,7 +3,7 @@
 
 table {
     border-collapse: collapse;
-    width: 100%;
+    width: auto !important;
     border-radius: 3px;
 }
 
