@@ -6,7 +6,7 @@ let data = [];
  */
 function uploadData() {
 
-    //Regex to check if the introduced data is correct
+    //Regex to chexk if the introduced data is correct
     let noNumReg = /^([^0-9]*)$/ ;
 
     //Error field reset

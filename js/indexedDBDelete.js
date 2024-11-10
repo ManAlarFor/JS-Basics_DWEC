@@ -19,13 +19,7 @@ function indexedDBDelete() {
             deleteRequest.onsuccess = function() {
                 window.location.replace("../index.html");
             };
-        } else {
-            console.log('No se encontró el usuario para eliminar');
-        }
-    };
-
-    request.onerror = function() {
-        console.error('Error al buscar el usuario para eliminar');
+        } 
     };
 
 }

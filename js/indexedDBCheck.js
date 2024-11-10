@@ -16,10 +16,7 @@ function indexedDBCheck(){
         const result = event.target.result; 
 
         // Error handler
-        if (result) {
-            console.log('Datos obtenidos:', result);
-        } else {
-            console.log('No se encontraron datos, redirigiendo al inicio...');
+        if (!result)  {
             window.location.replace("../index.html");
         }
     };

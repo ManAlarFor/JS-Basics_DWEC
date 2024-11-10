@@ -15,12 +15,4 @@ function indexedDBPut(name, value) {
     const request = almacen.add({ user: name, passwd: value });
 
 
-    request.onsuccess = function() {
-        console.log('Datos agregados exitosamente');
-    };
-    
-    request.onerror = function() {
-        console.error('Error al agregar datos');
-    };
-
 }

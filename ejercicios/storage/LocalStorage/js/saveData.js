@@ -8,12 +8,14 @@
  */
 function saveData(name, surname, age) {
 
+    let data = JSON.parse(localStorage.getItem("usersList")) || [];
+
     data.push({
         name: name,
         surname: surname,
         age: age,
     });
 
-    localStorage.setItem("localAccess", JSON.stringify(data)); 
+    localStorage.setItem("usersList", JSON.stringify(data)); 
 
 }

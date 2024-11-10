@@ -9,8 +9,8 @@ function showData() {
 
     const table = document.getElementById("table");
 
-    if (localStorage.getItem("localAccess") && JSON.parse(localStorage.getItem("localAccess")).length > 0) {
-        data = JSON.parse(localStorage.getItem("localAccess"));
+    if (localStorage.getItem("usersList") && JSON.parse(localStorage.getItem("usersList")).length > 0) {
+        data = JSON.parse(localStorage.getItem("usersList"));
 
         data.forEach(function (element) {
             let line = document.createElement("tr"),
@@ -41,9 +41,8 @@ function showData() {
             table.appendChild(line);
         });
     } else {
-        table.innerHTML = 'No existen datos almacenados';
+        table.innerHTML = 'No existing data';
     }
-    console.table(data);
 }
 
 
