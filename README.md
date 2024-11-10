@@ -122,3 +122,59 @@ This exercise consists of a number input, where the size, minimum and maximum va
 Este ejercicio está constituido por un input de tipo number, donde se puede introducir el tamaño, el valor mínimo y el valor máximo del array y un grupo de 9 botones, que son: 4 para el testeo, 2 botones que generan las dos primeras matrices y 3 botones para la matemática de las matrices. Los archivos JavaScript enlazados a esta página son "matrixAB.js" que crea la matriz dados los valores de los inputs, "matrixGen.js" que muestra la matriz en la sección de los resultados de la página, "matrixMath.js", que controla la suma, resta y multiplicación de arrays, "matrixManip.js" que aleatoriza la generación de arrays y "matrixTest.js", que establece el orden de la aleatorizacion.
 
 <img src="./img/matrixGenerator.png">
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+<h2>Storage</h2>
+
+This exercise consist of diferent types of storage.
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Este ejercicio consisten en distintos tipos de almacenaje.
+
+<img src="./img/storage.png">
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+<h2>Cookie Storage</h2>
+
+This exercise consists of 2 input fields, where the name and surname of the user can be specified and a button, which sends the data to the table below. The JavaScript files linked to this page are "uploadData.js" which recieves values in the inputs, sending them to "saveData.js" which adds them to the Cookie Storage. "showData.js" displays the content in the table, which contains a delete button that calls "deleteData.js" which deletes the element by the given name.
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Este ejercicio está constituido por dos imputs, siendo donde se introducen el nombre y apellidos del usuario y un botón, que envia los valores a la tabla inferior. Los enlaces de JavaScript son de "uploadData.js", que recine los valores de los inputs y los manda a "saveData.js" que añade el elemento al almacenamiento de Cookie. "showData.js" muestra el contenido de la tabla, el cual contiene un boton de eliminad que llama a "deleteData.js", que lo elimina por el nombre dado.s
+
+<img src="./img/cookieStorage.png">
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+<h2>Local Storage</h2>
+
+This exercise consists of 3 input fields, where the name, surname and age of the user can be specified and a button, which sends the data to the table below. The JavaScript files linked to this page are "uploadData.js" which recieves values in the inputs, sending them to "saveData.js" which adds them to the localStorage. "showData.js" displays the content in the table, which contains a delete button that calls "deleteData.js" which deletes the element by the given name.
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Este ejercicio está constituido por tres imputs, siendo donde se introducen el nombre, apellidos y edad del usuario y un botón, que envia los valores a la tabla inferior. Los enlaces de JavaScript son de "uploadData.js", que recine los valores de los inputs y los manda a "saveData.js" que añade el elemento al localStorage. "showData.js" muestra el contenido de la tabla, el cual contiene un boton de eliminad que llama a "deleteData.js", que lo elimina por el nombre dado.
+
+<img src="./img/LocalStorage.png">
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+<h2>API Storage</h2>
+
+This exercise consists of 2 buttons, which especifies the amount of Pokemon added to the table below. The JavaScript files linked to this page are "uploadData.js" which recieves the information from "recieveAPIData.js", which gets the information from PokeAPI, sending them to "saveData.js" which adds them to the localStorage. "showData.js" displays the content in the table, which contains a delete button that calls "deleteData.js" which deletes the element by the given name.
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Este ejercicio está constituido por dos botones, que especifica la cantidad de Pokemons añadidos a la tabla inferior. Los enlaces de JavaScript son de "uploadData.js", que recibe los valores de "recieveAPIData.js"  que recoge la informacion de la PokeAPI y los manda a "saveData.js" que añade el elemento al localStorage. "showData.js" muestra el contenido de la tabla, el cual contiene un boton de eliminad que llama a "deleteData.js", que lo elimina por el nombre dado.
+
+<img src="./img/pokeAPIStorage.png">
