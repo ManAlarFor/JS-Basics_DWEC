@@ -10,14 +10,14 @@ function showData() {
 
         let data = document.cookie.split(";");
 
-        console.log(data) ;
-
         data.forEach(function (dato) {
             let linea = document.createElement("tr"), 
                 campoName = document.createElement("td"), 
                 campoSurname = document.createElement("td"), 
                 campoBorrar = document.createElement("td"), 
-                botonBorrar = document.createElement("button");
+                botonBorrar = document.createElement("button"),
+                campoUpdate = document.createElement("td"), 
+                botonUpdate = document.createElement("button");
 
             let element = dato.split("="); 
             let cookieName = element[0].trim(); 
@@ -25,6 +25,15 @@ function showData() {
 
             campoName.innerHTML = decodeURIComponent(cookieName); 
             campoSurname.innerHTML = decodeURIComponent(cookieSurname); 
+
+            botonUpdate.textContent = "Update";
+            botonUpdate.className = "btn btn-warning";
+            botonUpdate.addEventListener('click', function () {
+                updateData(cookieName, cookieSurname); 
+                showData(); 
+            });
+
+            campoUpdate.appendChild(botonUpdate);
 
             botonBorrar.textContent = "Delete";
             botonBorrar.className = "btn btn-danger";
@@ -37,6 +46,7 @@ function showData() {
 
             linea.appendChild(campoName);
             linea.appendChild(campoSurname);
+            linea.appendChild(campoUpdate);
             linea.appendChild(campoBorrar);
 
             body.appendChild(linea);
