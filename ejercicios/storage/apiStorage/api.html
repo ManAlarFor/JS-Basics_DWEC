@@ -12,6 +12,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
+    <script defer src="./js/updateData.js"></script>
     <script defer src="./js/uploadData.js"></script>
     <script defer src="./js/deleteData.js"></script>
     <script defer src="./js/saveData.js"></script>
@@ -64,16 +65,103 @@
                         <!-- Inputs -->
                         <div class="row">
 
-                            <div class="col m-3">
+                            <div class="col-7 m-3">
 
-                                <button class="btn btn-dark" onclick="return randomPoke(1)">+1 Pokemon</button>
+                                <div class="row">
+                                    <div class="col">
+                                        <label for="dexNum">Pokedex Number:</label>
+                                        <input id="dexNum" name="dexNum" type="number"/>
+                                    </div>
+
+                                    <div class="col">
+                                        <label for="name">Name:</label>
+                                        <input id="name" name="name" type="text"/>
+                                    </div>
+        
+                                </div>
+
+                                <div class="row">
+                                    <label for="url">Image URL:</label>
+                                    <input id="url" name="url" type="text"/>
+                                </div>
+
+                                <div class="row m-4">
+                                    <div class="col">
+                                        <label for="type1" class="mb-2">Primary Type:</label>
+                                        <select name="type1" id="type1">
+                                            <option value="Normal">Normal</option>
+                                            <option value="Fire">Fire</option>
+                                            <option value="Water">Water</option>
+                                            <option value="Grass">Grass</option>
+                                            <option value="Electric">Electric</option>
+                                            <option value="Ice">Ice</option>
+                                            <option value="Fighting">Fighting</option>
+                                            <option value="Poison">Poison</option>
+                                            <option value="Ground">Ground</option>
+                                            <option value="Flying">Flying</option>
+                                            <option value="Psychic">Psychic</option>
+                                            <option value="Bug">Bug</option>
+                                            <option value="Rock">Rock</option>
+                                            <option value="Ghost">Ghost</option>
+                                            <option value="Dragon">Dragon</option>
+                                            <option value="Dark">Dark</option>
+                                            <option value="Steel">Steel</option>
+                                            <option value="Fairy">Fairy</option>
+                                        </select>
+                                        
+                                    </div>
+
+                                    <div class="col">
+                                        <label for="type2" class="mb-2">Secondary Type:</label>
+                                        <select name="type2" id="type2">
+                                            <option value="------" selected>Null</option>
+                                            <option value="Normal">Normal</option>
+                                            <option value="Fire">Fire</option>
+                                            <option value="Water">Water</option>
+                                            <option value="Grass">Grass</option>
+                                            <option value="Electric">Electric</option>
+                                            <option value="Ice">Ice</option>
+                                            <option value="Fighting">Fighting</option>
+                                            <option value="Poison">Poison</option>
+                                            <option value="Ground">Ground</option>
+                                            <option value="Flying">Flying</option>
+                                            <option value="Psychic">Psychic</option>
+                                            <option value="Bug">Bug</option>
+                                            <option value="Rock">Rock</option>
+                                            <option value="Ghost">Ghost</option>
+                                            <option value="Dragon">Dragon</option>
+                                            <option value="Dark">Dark</option>
+                                            <option value="Steel">Steel</option>
+                                            <option value="Fairy">Fairy</option>
+                                        </select>
+                                    </div>
+        
+                                </div>
 
                             </div>
+                            
+                            
+                            <div class="col">
 
+                                <div class="row m-3">
 
-                            <div class="col m-3">
+                                    <div class="col mt-3">
+                                        <button class="btn btn-dark" onclick="return uploadData()">Upload Data</button>
+                                    </div>
 
-                                <button class="btn btn-dark" onclick="return randomPoke(5)">+5 Pokemon</button>
+                                </div>
+
+                                <div class="row m-3">
+
+                                    <div class="col">
+                                        <button class="btn btn-dark" onclick="return randomPoke(1)">+1 Pokemon</button>
+                                    </div>
+
+                                    <div class="col">
+                                        <button class="btn btn-dark" onclick="return randomPoke(5)">+5 Pokemon</button>
+                                    </div>
+
+                                </div>
 
                             </div>
 

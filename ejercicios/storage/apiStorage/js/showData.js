@@ -20,6 +20,8 @@ function showData() {
                 campoSprite = document.createElement("td"),
                 campoBorrar = document.createElement("td"),
                 botonBorrar = document.createElement("button"),
+                campoUpdate = document.createElement("td"),
+                botonUpdate = document.createElement("button"),
                 imgSprite = document.createElement("img");
 
             campoNum.innerHTML = element.pokedexNum;
@@ -28,6 +30,16 @@ function showData() {
             campoType2.innerHTML = element.type2;
             imgSprite.src = element.sprite || "";
             campoSprite.appendChild(imgSprite);
+
+            botonUpdate.textContent = "Update";
+            botonUpdate.className = "btn btn-warning";
+            botonUpdate.addEventListener('click', function () {
+                deleteData(element.name); 
+                updateData(element.pokedexNum, element.name, element.type1, element.type2, element.sprite); 
+                showData(); 
+            });
+
+            campoUpdate.appendChild(botonUpdate);
 
             botonBorrar.textContent = "Delete";
             botonBorrar.className = "btn btn-danger";
@@ -42,6 +54,7 @@ function showData() {
             line.appendChild(campoType1);
             line.appendChild(campoType2);
             line.appendChild(campoSprite);
+            line.appendChild(campoUpdate);
             line.appendChild(campoBorrar);
 
             body.appendChild(line);
