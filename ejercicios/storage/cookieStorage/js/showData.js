@@ -29,6 +29,8 @@ function showData() {
             botonUpdate.textContent = "Update";
             botonUpdate.className = "btn btn-warning";
             botonUpdate.addEventListener('click', function () {
+                deleteData(cookieName); 
+                cookieName = element[0]  ? decodeURIComponent(element[0].trim()) : ''; 
                 updateData(cookieName, cookieSurname); 
                 showData(); 
             });

@@ -16,15 +16,25 @@ function showData() {
             let line = document.createElement("tr"),
                 campoName = document.createElement("td"),
                 campoSurname = document.createElement("td"),
-                campoBorrar = document.createElement("td"),
                 campoAge = document.createElement("td"),
-                botonBorrar = document.createElement("button");
-        
+                campoBorrar = document.createElement("td"),
+                botonBorrar = document.createElement("button"),
+                campoUpdate = document.createElement("td"),
+                botonUpdate = document.createElement("button");
 
             campoName.innerHTML = element.name;
             campoSurname.innerHTML = element.surname;
             campoAge.innerHTML = element.age;
-        
+
+            botonUpdate.textContent = "Update";
+            botonUpdate.className = "btn btn-warning";
+            botonUpdate.addEventListener('click', function () {
+                deleteData(element.name,element.surname,element.age);
+                updateData(element.name,element.surname,element.age); 
+                showData(); 
+            });
+
+            campoUpdate.appendChild(botonUpdate);
             botonBorrar.textContent = "Delete" ;
             botonBorrar.className = "btn btn-danger";
             botonBorrar.addEventListener('click', function () {
@@ -36,6 +46,7 @@ function showData() {
             line.appendChild(campoName);
             line.appendChild(campoSurname);
             line.appendChild(campoAge);
+            line.appendChild(campoUpdate);
             line.appendChild(campoBorrar);
 
             table.appendChild(line);
