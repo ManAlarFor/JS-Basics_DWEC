@@ -11,7 +11,7 @@ function deleteData(name,surname,age) {
     let newDatosAcceso = [];
     let cont = 0;
 
-    let datosAcceso = JSON.parse(localStorage.getItem("usersList")); 
+    let datosAcceso = JSON.parse(sessionStorage.getItem("usersList")); 
 
     for (let i = 0; i < datosAcceso.length; i++) {
         if (!(datosAcceso[i].name == name && datosAcceso[i].surname == surname && datosAcceso[i].age == age)) { 
@@ -22,7 +22,7 @@ function deleteData(name,surname,age) {
 
     datosAcceso = [...newDatosAcceso]; 
 
-    localStorage.setItem("usersList", JSON.stringify(datosAcceso)); 
+    sessionStorage.setItem("usersList", JSON.stringify(datosAcceso)); 
 
     showData(); 
 }

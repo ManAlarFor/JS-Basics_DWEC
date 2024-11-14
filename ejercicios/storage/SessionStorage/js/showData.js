@@ -1,7 +1,7 @@
 'use strict';
 
 /**
- * Shows the data storaged in LocalStorage
+ * Shows the data storaged in sessionStorage
  */
 function showData() {
 
@@ -9,8 +9,8 @@ function showData() {
 
     const table = document.getElementById("table");
 
-    if (localStorage.getItem("usersList") && JSON.parse(localStorage.getItem("usersList")).length > 0) {
-        data = JSON.parse(localStorage.getItem("usersList"));
+    if (sessionStorage.getItem("usersList") && JSON.parse(sessionStorage.getItem("usersList")).length > 0) {
+        data = JSON.parse(sessionStorage.getItem("usersList"));
 
         data.forEach(function (element) {
             let line = document.createElement("tr"),

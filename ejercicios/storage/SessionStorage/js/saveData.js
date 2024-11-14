@@ -8,7 +8,7 @@
  */
 function saveData(name, surname, age) {
 
-    let data = JSON.parse(localStorage.getItem("usersList")) || [];
+    let data = JSON.parse(sessionStorage.getItem("usersList")) || [];
 
     data.push({
         name: name,
@@ -16,6 +16,6 @@ function saveData(name, surname, age) {
         age: age,
     });
 
-    localStorage.setItem("usersList", JSON.stringify(data)); 
+    sessionStorage.setItem("usersList", JSON.stringify(data)); 
 
 }

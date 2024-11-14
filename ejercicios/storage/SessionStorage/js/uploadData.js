@@ -12,7 +12,7 @@ function uploadData() {
     //Error field reset
     document.getElementById("error").innerHTML = "" ;
 
-    if (window.localStorage) {
+    if (window.sessionStorage) {
         const name      = document.getElementById("name").value; 
         const surname   = document.getElementById("sur").value; 
         const age       = document.getElementById("age").value;
@@ -39,7 +39,7 @@ function uploadData() {
         }
 
     } else {
-        alert("El navegador no soporta localStorage");
+        alert("El navegador no soporta sessionStorage");
     }
 
 }
