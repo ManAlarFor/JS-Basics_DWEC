@@ -1,5 +1,9 @@
 'use strict';
 
+/**
+ * Deletes the specified element in the table
+ * @param {*} id 
+ */
 function deleteData(id) {
 
     dbRequest = indexedDB.open(dbName, versionBD);

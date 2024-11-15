@@ -1,4 +1,8 @@
 'use strict';
+
+/**
+ * Database initialation
+ */
 let data = [];
 let dbRequest, 
     starWarsDB,
@@ -27,6 +31,9 @@ dbRequest.onupgradeneeded = function (event) {
 
 };
 
+/**
+ * Recieves the data from the inputs and saves them
+ */
 function uploadData(){
 
     document.getElementById("error").innerText = "" ;
@@ -54,7 +61,7 @@ function uploadData(){
 }
 
 /**
- * Recieves the data in the api and shows it
+ * Recieves the data in the api and saves it
  * @param {number} amount
  */
 async function randomCharacter(amount) {

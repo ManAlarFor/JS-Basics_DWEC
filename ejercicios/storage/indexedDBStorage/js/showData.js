@@ -1,5 +1,8 @@
 'use strict';
 
+/**
+ * Shows the data in the database
+ */
 function showData() {
 
     const body = document.getElementById("table");

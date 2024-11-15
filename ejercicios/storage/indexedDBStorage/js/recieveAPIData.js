@@ -1,7 +1,7 @@
 "use strict"
 
 /**
- * Recieves a pokemon by the given pokedex number
+ * Recieves a character by the given random number
  * @param {int} id 
  * @returns 
  */

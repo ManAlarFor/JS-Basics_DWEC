@@ -1,5 +1,11 @@
 'use strict';
 
+/**
+ * Updates an specified element in the table
+ * @param {*} name 
+ * @param {*} homeworld 
+ * @param {*} species 
+ */
 function updateData(name, homeworld, species){
 
     //Data fields change

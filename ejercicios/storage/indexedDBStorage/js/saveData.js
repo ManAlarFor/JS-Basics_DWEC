@@ -1,7 +1,12 @@
 'use strict';
 
+/**
+ * Saves the data and stores it in the indexedDB
+ * @param {*} name 
+ * @param {*} homeworld 
+ * @param {*} species 
+ */
 function saveData(name, homeworld, species) {
-
 
     dbRequest = indexedDB.open(dbName, versionBD);
 
