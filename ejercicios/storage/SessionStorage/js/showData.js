@@ -35,6 +35,7 @@ function showData() {
             });
 
             campoUpdate.appendChild(botonUpdate);
+
             botonBorrar.textContent = "Delete" ;
             botonBorrar.className = "btn btn-danger";
             botonBorrar.addEventListener('click', function () {
