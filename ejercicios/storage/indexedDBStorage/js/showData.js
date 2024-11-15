@@ -1,17 +1,11 @@
 'use strict';
 
 function showData() {
-    console.log("Mostrando datos...");
+
     const body = document.getElementById("table");
     body.innerHTML = "" ;
 
     dbRequest = indexedDB.open(dbName, versionBD);
-
-
-    dbRequest.onerror = function (event) {
-        console.error(`IndexedDB error: ${event.target.errorCode}`);
-    };
-
 
     dbRequest.onsuccess = function (event) {
 
@@ -22,7 +16,6 @@ function showData() {
         canalBD.getAll().onsuccess = function (event) {
 
             let registros = event.target.result;
-            console.log(registros);
 
             if(registros.length > 0){
 

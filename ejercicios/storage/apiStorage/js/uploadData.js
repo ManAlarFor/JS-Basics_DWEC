@@ -67,7 +67,7 @@ async function randomPoke(amount) {
                 saveData(pokemon);
 
             } catch (error) {
-                document.getElementById("error").innerText = "Error al obtener datos del Pokémon.";
+                document.getElementById("error").innerText = "Error while loading the Pokemin.";
             }
         } else {
             alert("El navegador no soporta localStorage");

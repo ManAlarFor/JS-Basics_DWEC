@@ -9,23 +9,13 @@ let tablaBD = "starWarsCharacters";
 
 dbRequest = indexedDB.open(dbName, versionBD); 
 
-
-dbRequest.onerror = function (event) {
-    console.error(`IndexedDB error: ${event.target.errorCode}`); 
-};
-
-
 dbRequest.onsuccess = function (event) { 
-
-    console.info('Conexión satisfactoria'); 
 
     starWarsDB = event.target.result; 
 };
 
 
 dbRequest.onupgradeneeded = function (event) { 
-
-    console.info('Base de datos creada'); 
 
     starWarsDB = event.target.result; 
 
@@ -38,6 +28,8 @@ dbRequest.onupgradeneeded = function (event) {
 };
 
 function uploadData(){
+
+    document.getElementById("error").innerText = "" ;
 
     const name = document.getElementById("name").value;
     const homeworld = document.getElementById("homeworld").value;
@@ -57,5 +49,33 @@ function uploadData(){
 
     }
 
+    showData() ;
+
 }
 
+/**
+ * Recieves the data in the api and shows it
+ * @param {number} amount
+ */
+async function randomCharacter(amount) {
+
+    document.getElementById("error").innerText = "" ;
+
+    for (let i = 0; i < amount; i++) {
+        let num = randomNum(1, 82);
+
+        if (window.localStorage) {
+            try {
+
+                let character = await recieveAPIData(num);
+
+                saveData(character.name,character.homeworld,character.species);
+
+            } catch (error) {
+                document.getElementById("error").innerText = "Error while loading the character.";
+            }
+        }
+    }
+
+    showData();
+}
