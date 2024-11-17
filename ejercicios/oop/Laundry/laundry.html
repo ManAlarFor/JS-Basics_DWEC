@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Laundry</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <link rel="shortcut icon" href="../../../img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../../../css/styles.css">
+    <link rel="stylesheet" href="../../../css/tables.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <script defer src="./js/manageData.js"></script>
+    <script defer src="./js/saveData.js"></script>
+    <script defer src="./js/showData.js"></script>
+    <script defer src="./js/recieveClothes.js"></script>
+    <script defer src="../../js/randomNum.js"></script>
+</head>
+<body>
+
+    <!-- Top and NavBar Section -->
+
+    <div class=" bg-blVio">
+
+        <div class="container text-center text-light h-25 mg-btn-cero">
+
+            <div class="row">
+
+                <div class="col">
+                    <a href="../../main.html"><i class="bi bi-arrow-90deg-up fs-1 text-light"></i></a>
+                </div>
+
+                <div class="col-9">
+                    <h1 class="" >OOP</h1>
+                </div>
+
+                <div class="col-2"></div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Laundry list -->
+
+    <div class="container m-5">
+
+        <div class="row p-3">
+
+            <div class="col-2"></div>
+
+            <div class="col-8">
+
+                <div class="p-3 card text-center">
+
+                    <h2 class="p-4">Laundry list</h2>
+
+                    <div class="container">
+
+                        <!-- Inputs -->
+                        <div class="row">
+
+                            <div class="col-7 m-3">
+
+                                <!-- Table Display -->
+                                <div class="row">
+
+                                    <table id="table" class="responsive-table"></table>
+
+                                </div>
+
+                            </div>
+
+                            
+                            <div class="col">
+
+                                <div class="row m-3">
+
+                                    <div class="col mt-3">
+                                        <button class="btn btn-dark" onclick="return addData()">Add Element</button>
+                                    </div>
+
+                                </div>
+
+                                <div class="row m-3">
+
+                                    <div class="col">
+                                        <button class="btn btn-dark" onclick="return removeData()">Remove Element</button>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <!-- Error Display -->
+                        <div class="row">
+
+                            <div id="error" class="text-danger m-3"></div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-2"></div>
+
+        </div>
+    </div>
+
+    <!-- Footer -->
+
+    <footer  class="bg-dark text-light text-center p-4">
+        <h2>Manuel Alarcón Fortes</h2>
+    </footer>
+
+</body>
+</html>
