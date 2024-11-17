@@ -169,20 +169,6 @@ Este ejercicio está constituido por tres imputs, siendo donde se introducen el 
 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-<h2>LocalStorage + PokeAPI</h2>
-
-This exercise consists of 5 input fields for Pokedex Number, Pokemon Name, the types and the url for their image. There is a button to send the data and 2 buttons, which especifies the amount of Pokemon added to the table below via API. The JavaScript files linked to this page are "uploadData.js" which recieves the information from "recieveAPIData.js", which gets the information from PokeAPI, sending them to "saveData.js" which adds them to the localStorage. "showData.js" displays the content in the table, which contains a delete button that calls "deleteData.js" which deletes the element by the given name and a update button which calls "updateData.js".
-
-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-
-Este ejercicio está constituido por 5 campos de input: Numero de la Pokedex, Nombre del Pokemon, los tipos y la url de la imagen de estos. También hay un botón para subir los datos y otros dos botones, que especifica la cantidad de Pokemons añadidos a la tabla inferior vía API. Los enlaces de JavaScript son de "uploadData.js", que recibe los valores de "recieveAPIData.js"  que recoge la informacion de la PokeAPI y los manda a "saveData.js" que añade el elemento al localStorage. "showData.js" muestra el contenido de la tabla, el cual contiene un boton de eliminad que llama a "deleteData.js", que lo elimina por el nombre dado y un boton para actualizar que llama a "updateData.js".
-
-<img src="./img/pokeAPIStorage.png">
-
-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-
-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-
 <h2>IndexedDB + StarWars</h2>
 
 This exercise consists of 3 input fields for name, homeworld and species. There is a button to send the data and 2 buttons, which especifies the amount of Characters added to the table below via API. The JavaScript files linked to this page are "uploadData.js" which recieves the information from "recieveAPIData.js", which gets the information from SWAPI(Star Wars API), sending them to "saveData.js" which adds them to the IndexedDB. "showData.js" displays the content in the table, which contains a delete button that calls "deleteData.js" which deletes the element by the given name and a update button which calls "updateData.js".
@@ -190,5 +176,18 @@ This exercise consists of 3 input fields for name, homeworld and species. There 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 Este ejercicio está constituido por 3 campos de input: nombre, planeta de origen y especie. También hay un botón para subir los datos y otros dos botones, que especifica la cantidad de personajes añadidos a la tabla inferior vía API. Los enlaces de JavaScript son de "uploadData.js", que recibe los valores de "recieveAPIData.js"  que recoge la informacion de la SWAPI(Star Wars API) y los manda a "saveData.js" que añade el elemento a la IndexedDB. "showData.js" muestra el contenido de la tabla, el cual contiene un boton de eliminad que llama a "deleteData.js", que lo elimina por el nombre dado y un boton para actualizar que llama a "updateData.js".
+
+<img src="./img/pokeAPIStorage.png">
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+<h2>LocalStorage + PokeAPI</h2>
+
+This exercise consists of 5 input fields for Pokedex Number, Pokemon Name, the types and the url for their image. There is a button to send the data and 2 buttons, which especifies the amount of Pokemon added to the table below via API. The JavaScript files linked to this page are "uploadData.js" which recieves the information from "recieveAPIData.js", which gets the information from PokeAPI, sending them to "saveData.js" which adds them to the localStorage. "showData.js" displays the content in the table, which contains a delete button that calls "deleteData.js" which deletes the element by the given name and a update button which calls "updateData.js".
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Este ejercicio está constituido por 5 campos de input: Numero de la Pokedex, Nombre del Pokemon, los tipos y la url de la imagen de estos. También hay un botón para subir los datos y otros dos botones, que especifica la cantidad de Pokemons añadidos a la tabla inferior vía API. Los enlaces de JavaScript son de "uploadData.js", que recibe los valores de "recieveAPIData.js"  que recoge la informacion de la PokeAPI y los manda a "saveData.js" que añade el elemento al localStorage. "showData.js" muestra el contenido de la tabla, el cual contiene un boton de eliminad que llama a "deleteData.js", que lo elimina por el nombre dado y un boton para actualizar que llama a "updateData.js".
 
 <img src="./img/pokeAPIStorage.png">
