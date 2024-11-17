@@ -1,42 +1,17 @@
 'use strict';
 
-/**
- * Recieves the data from recieveAPIData.js and shows it
- */
-async function addData() {
+let garage = new Garage();
 
-    document.getElementById("error").innerHTML = "" ;
+garage.showData() ;
 
-    if (window.localStorage) {
+function moreShips() {
 
-        let num = randomNum(2,36) ;
+    garage.addData()
 
-        let ship = recieveAPIData(num) ;
-
-        saveData(ship);
-
-    }
-
-    showData();
 }
 
-/**
- * Removes the last item from the stored array in localStorage and updates it
- */
-function removeData() {
+function removeShip() {
 
-    let data = JSON.parse(localStorage.getItem("spaceShips"));
+    garage.removeData() ;
 
-    // Checks if the data exists
-    if (Array.isArray(data) && data.length > 0) {
-
-        data.pop();
-
-        // Updates the localStorage data
-        localStorage.setItem("spaceShips", JSON.stringify(data));
-
-        showData();
-    } else {
-        document.getElementById("error").innerHTML = "No data to remove";
-    }
 }

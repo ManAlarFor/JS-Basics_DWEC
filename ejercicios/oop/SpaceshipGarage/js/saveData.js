@@ -9,11 +9,8 @@ function saveData(ship) {
     let data = JSON.parse(localStorage.getItem("spaceShips")) || [];
 
     data.push({
-        ship: ship
+        name: ship
     });
-
-    console.log(ship)
-    console.log(data.ship)
 
     localStorage.setItem("spaceShips", JSON.stringify(data));
 }

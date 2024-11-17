@@ -19,7 +19,11 @@ async function recieveAPIData(id){
 
             cont = false ;
 
-            return data.name;
+            let element = {
+                name: data.name 
+            }
+
+            return element;
 
         } else {
 
