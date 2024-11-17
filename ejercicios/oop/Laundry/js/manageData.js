@@ -1,40 +1,17 @@
 'use strict';
 
-/**
- * Recieves the data from recieveClothes.js and shows it
- */
-function addData() {
+let washingMachine = new WashingMachine();
 
-    document.getElementById("error").innerHTML = "" ;
+washingMachine.showData() ;
 
-    if (window.localStorage) {
+function moreClothes() {
 
-        let clothes = recieveClothes() ;
+    washingMachine.addData()
 
-        saveData(clothes);
-
-    }
-
-    showData();
 }
 
-/**
- * Removes the last item from the stored array in localStorage and updates it
- */
-function removeData() {
+function removeClothes() {
 
-    let data = JSON.parse(localStorage.getItem("clothes"));
+    washingMachine.removeData() ;
 
-    // Checks if the data exists
-    if (Array.isArray(data) && data.length > 0) {
-
-        data.pop();
-
-        // Updates the localStorage data
-        localStorage.setItem("clothes", JSON.stringify(data));
-
-        showData();
-    } else {
-        document.getElementById("error").innerHTML = "No data to remove";
-    }
 }
