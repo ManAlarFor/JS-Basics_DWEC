@@ -1,17 +1,19 @@
 'use strict';
 
 /**
- * Recieves the data from recieveClothes.js and shows it
+ * Recieves the data from recieveAPIData.js and shows it
  */
-function addData() {
+async function addData() {
 
     document.getElementById("error").innerHTML = "" ;
 
     if (window.localStorage) {
 
-        let clothes = recieveClothes() ;
+        let num = randomNum(2,36) ;
 
-        saveData(clothes);
+        let ship = recieveAPIData(num) ;
+
+        saveData(ship);
 
     }
 
@@ -23,7 +25,7 @@ function addData() {
  */
 function removeData() {
 
-    let data = JSON.parse(localStorage.getItem("clothes"));
+    let data = JSON.parse(localStorage.getItem("spaceShips"));
 
     // Checks if the data exists
     if (Array.isArray(data) && data.length > 0) {
@@ -31,7 +33,7 @@ function removeData() {
         data.pop();
 
         // Updates the localStorage data
-        localStorage.setItem("clothes", JSON.stringify(data));
+        localStorage.setItem("spaceShips", JSON.stringify(data));
 
         showData();
     } else {

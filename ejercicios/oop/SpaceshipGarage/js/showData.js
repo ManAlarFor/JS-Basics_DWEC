@@ -9,7 +9,7 @@ function showData() {
 
     // Recieves the localStorage data
     const body = document.getElementById("table");
-    let data = JSON.parse(localStorage.getItem("clothes"));
+    let data = JSON.parse(localStorage.getItem("spaceShips"));
 
     // Checks if data is valid
     if (Array.isArray(data) && data.length > 0) {
@@ -17,7 +17,7 @@ function showData() {
             let line = document.createElement("tr"),
                 campoName = document.createElement("td");
 
-            campoName.innerHTML = element.clothes;
+            campoName.innerHTML = element.ship ;
 
             line.appendChild(campoName);
 

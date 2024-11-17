@@ -2,16 +2,18 @@
 
 /** 
  * Saves the introduced clothes
- * @param {string} clothes
+ * @param {string} ship
  */
-function saveData(clothes) {
+function saveData(ship) {
 
-    let data = JSON.parse(localStorage.getItem("clothes")) || [];
+    let data = JSON.parse(localStorage.getItem("spaceShips")) || [];
 
     data.push({
-        clothes: clothes
+        ship: ship
     });
 
-    // Sends Data
-    localStorage.setItem("clothes", JSON.stringify(data));
+    console.log(ship)
+    console.log(data.ship)
+
+    localStorage.setItem("spaceShips", JSON.stringify(data));
 }
