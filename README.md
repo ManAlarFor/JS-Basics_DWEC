@@ -177,7 +177,7 @@ This exercise consists of 3 input fields for name, homeworld and species. There 
 
 Este ejercicio está constituido por 3 campos de input: nombre, planeta de origen y especie. También hay un botón para subir los datos y otros dos botones, que especifica la cantidad de personajes añadidos a la tabla inferior vía API. Los enlaces de JavaScript son de "uploadData.js", que recibe los valores de "recieveAPIData.js"  que recoge la informacion de la SWAPI(Star Wars API) y los manda a "saveData.js" que añade el elemento a la IndexedDB. "showData.js" muestra el contenido de la tabla, el cual contiene un boton de eliminad que llama a "deleteData.js", que lo elimina por el nombre dado y un boton para actualizar que llama a "updateData.js".
 
-<img src="./img/pokeAPIStorage.png">
+<img src="./img/IndexedDBStarWars.png.png">
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
