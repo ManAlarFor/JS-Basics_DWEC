@@ -1,33 +1,33 @@
-"use strict"
+"use strict";
 
 class Wishlist {
 
+    amoutFav = 0;
+
     constructor() {
         this.wishlist = new Array();
-        this.tamano = 0;
     }
-
 
     /**
-     * Recieves the data from recieveAPIData.js and shows it
+     * Adds data to the database
+     * @param {boolean} favourite 
      */
-    async addData() {
+    async addData(favourite) {
 
-        document.getElementById("error").innerHTML = "" ;
-    
+        document.getElementById("error").innerHTML = "";
+
         if (window.localStorage) {
-    
-            let num = randomNum(1,20) ;
-    
-            let wish = await recieveAPIData(num) ;
-    
-            saveData(wish);
-    
+
+            let num = randomNum(1, 20);
+
+            let wish = await recieveAPIData(num);
+
+            saveData(wish, favourite);
+
         }
-    
+
         this.showData();
     }
-
 
     /**
      * Removes the last item from the stored array in localStorage and updates it
@@ -39,7 +39,23 @@ class Wishlist {
         // Checks if the data exists
         if (Array.isArray(data) && data.length > 0) {
 
-            data.shift();
+            let num ;
+
+            if(wishlist.amoutFav > 0){
+
+                do{
+
+                    num = randomNum(0,data.length-1);
+
+                }while(!data[num].fav)
+
+            } else {
+
+                num = randomNum(0,data.length-1);
+
+            }
+
+            data.splice(num,1)
 
             // Updates the localStorage data
             localStorage.setItem("wishes", JSON.stringify(data));
@@ -50,8 +66,6 @@ class Wishlist {
         }
     }
 
-
-
     /**
      * Shows the data in localStorage
      */
@@ -59,14 +73,17 @@ class Wishlist {
 
         document.getElementById("table").innerHTML = "";
 
+        // Resetea amoutFav para calcular los favoritos actuales
+        this.amoutFav = 0;
+
         // Recieves the localStorage data
         const body = document.getElementById("table");
         let data = JSON.parse(localStorage.getItem("wishes"));
 
         // Checks if data is valid
         if (Array.isArray(data) && data.length > 0) {
-            let num = 1 ;
-            data.forEach(function (element) {
+            let num = 1;
+            data.forEach((element) => {
 
                 let line = document.createElement("tr"),
                     campoNum = document.createElement("td"),
@@ -74,22 +91,32 @@ class Wishlist {
                     campoName = document.createElement("td"),
                     campoImg = document.createElement("td");
 
-                campoName.innerHTML = element.name ;
-                campoNum.innerHTML = num ; 
-                img.src = element.img ; 
-                img.className = "w-25" ; 
+                campoName.innerHTML = element.name;
+                img.src = element.img;
+                img.className = "w-25";
+
+                if (element.fav) {
+
+                    this.amoutFav++;
+
+                    campoNum.innerHTML = `${num} (favourite)`;
+
+                } else {
+
+                    campoNum.innerHTML = num;
+
+                }
 
                 line.appendChild(campoNum);
                 line.appendChild(campoName);
                 campoImg.appendChild(img);
                 line.appendChild(campoImg);
 
-                console.log(element.img)
-
                 body.appendChild(line);
 
-                num++ ;
+                num++;
             });
+
         } else {
             body.innerHTML = 'No existing data';
         }

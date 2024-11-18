@@ -5,8 +5,6 @@
  */
 async function recieveAPIData(id){
 
-    console.log(id) ;
-
     const wish = await fetch(`https://fakestoreapi.com/products/${id}`) ;
 
     if (!wish.ok) {

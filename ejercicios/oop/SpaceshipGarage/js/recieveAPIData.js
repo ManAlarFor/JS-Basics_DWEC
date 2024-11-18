@@ -9,8 +9,6 @@ async function recieveAPIData(id){
 
     while(cont){
 
-        console.log(id) ;
-
         const ship = await fetch(`https://swapi.dev/api/starships/${id}`) ;
 
         if (ship.ok) {
