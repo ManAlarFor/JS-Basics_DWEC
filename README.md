@@ -147,7 +147,7 @@ This exercise consists of 2 input fields, where the name and surname of the user
 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-Este ejercicio está constituido por dos imputs, siendo donde se introducen el nombre y apellidos del usuario y un botón, que envia los valores a la tabla inferior. Los enlaces de JavaScript son de "uploadData.js", que recine los valores de los inputs y los manda a "saveData.js" que añade el elemento al almacenamiento de Cookie. "showData.js" muestra el contenido de la tabla, el cual contiene un boton de eliminar que llama a "deleteData.js", que lo elimina por el nombre dado y un boton para actualizar que llama a "updateData.js".
+Este ejercicio está constituido por dos imputs, siendo donde se introducen el nombre y apellidos del usuario y un botón, que envia los valores a la tabla inferior. Los enlaces de JavaScript son de "uploadData.js", que recibe los valores de los inputs y los manda a "saveData.js" que añade el elemento al almacenamiento de Cookie. "showData.js" muestra el contenido de la tabla, el cual contiene un botón de eliminar que llama a "deleteData.js", que lo elimina por el nombre dado y un boton para actualizar que llama a "updateData.js".
 
 <img src="./img/cookieStorage.png">
 
@@ -161,7 +161,7 @@ This exercise consists of 3 input fields, where the name, surname and age of the
 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-Este ejercicio está constituido por tres imputs, siendo donde se introducen el nombre, apellidos y edad del usuario y un botón, que envia los valores a la tabla inferior. Los enlaces de JavaScript son de "uploadData.js", que recine los valores de los inputs y los manda a "saveData.js" que añade el elemento al SessionStorage. "showData.js" muestra el contenido de la tabla, el cual contiene un boton de eliminad que llama a "deleteData.js", que lo elimina por el nombre dado y un boton para actualizar que llama a "updateData.js".
+Este ejercicio está constituido por tres imputs, siendo donde se introducen el nombre, apellidos y edad del usuario y un botón, que envia los valores a la tabla inferior. Los enlaces de JavaScript son de "uploadData.js", que recine los valores de los inputs y los manda a "saveData.js" que añade el elemento al SessionStorage. "showData.js" muestra el contenido de la tabla, el cual contiene un botón de eliminad que llama a "deleteData.js", que lo elimina por el nombre dado y un boton para actualizar que llama a "updateData.js".
 
 <img src="./img/SessionStorage.png">
 
@@ -175,7 +175,7 @@ This exercise consists of 3 input fields for name, homeworld and species. There 
 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-Este ejercicio está constituido por 3 campos de input: nombre, planeta de origen y especie. También hay un botón para subir los datos y otros dos botones, que especifica la cantidad de personajes añadidos a la tabla inferior vía API. Los enlaces de JavaScript son de "uploadData.js", que recibe los valores de "recieveAPIData.js"  que recoge la informacion de la SWAPI(Star Wars API) y los manda a "saveData.js" que añade el elemento a la IndexedDB. "showData.js" muestra el contenido de la tabla, el cual contiene un boton de eliminad que llama a "deleteData.js", que lo elimina por el nombre dado y un boton para actualizar que llama a "updateData.js".
+Este ejercicio está constituido por 3 campos de input: nombre, planeta de origen y especie. También hay un botón para subir los datos y otros dos botones, que especifica la cantidad de personajes añadidos a la tabla inferior vía API. Los enlaces de JavaScript son de "uploadData.js", que recibe los valores de "recieveAPIData.js"  que recoge la informacion de la SWAPI(Star Wars API) y los manda a "saveData.js" que añade el elemento a la IndexedDB. "showData.js" muestra el contenido de la tabla, el cual contiene un boton de eliminad que llama a "deleteData.js", que lo elimina por el nombre dado y un botón para actualizar que llama a "updateData.js".
 
 <img src="./img/IndexedDBStarWars.png.png">
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -188,6 +188,62 @@ This exercise consists of 5 input fields for Pokedex Number, Pokemon Name, the t
 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-Este ejercicio está constituido por 5 campos de input: Numero de la Pokedex, Nombre del Pokemon, los tipos y la url de la imagen de estos. También hay un botón para subir los datos y otros dos botones, que especifica la cantidad de Pokemons añadidos a la tabla inferior vía API. Los enlaces de JavaScript son de "uploadData.js", que recibe los valores de "recieveAPIData.js"  que recoge la informacion de la PokeAPI y los manda a "saveData.js" que añade el elemento al localStorage. "showData.js" muestra el contenido de la tabla, el cual contiene un boton de eliminad que llama a "deleteData.js", que lo elimina por el nombre dado y un boton para actualizar que llama a "updateData.js".
+Este ejercicio está constituido por 5 campos de input: Numero de la Pokedex, Nombre del Pokemon, los tipos y la url de la imagen de estos. También hay un botón para subir los datos y otros dos botones, que especifica la cantidad de Pokemons añadidos a la tabla inferior vía API. Los enlaces de JavaScript son de "uploadData.js", que recibe los valores de "recieveAPIData.js"  que recoge la informacion de la PokeAPI y los manda a "saveData.js" que añade el elemento al localStorage. "showData.js" muestra el contenido de la tabla, el cual contiene un boton de eliminad que llama a "deleteData.js", que lo elimina por el nombre dado y un botón para actualizar que llama a "updateData.js".
 
 <img src="./img/pokeAPIStorage.png">
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+<h2>Object Oriented Programming</h2>
+
+This exercise consist of diferent exercises of object oriented programming.
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Este ejercicio consisten en distintos ejercicios de programación orientada a objetos.
+
+<img src="./img/ObjectOrientedProgramming.png">
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+<h2>Laundry</h2>
+
+This exercise consists of 2 buttons, the first adds content to the table, and the second deletes the last item added. The JavaScript files linked to this page are "manageData.js" which recieves information about the button pressed and calls the respective function in the class "WashingMachine.js" which also has a showData fuction, which displays the content in the table. "recieveClotes.js" returns a clothing item, so it can be displayed. The last file is "saveData.js" which saves the data in the localStorage.
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Este ejercicio está constituido por dos botones, el primero añade elementos a la tabla y el otro elimina el último añadido. Los enlaces de JavaScript son de "manageData.js", que recibe información sobre el botón pulsado y responde en consonancia llamando a la respectiva función de "WashingMachine.js", que también contiene una función llamada showData muestra el contenido de la tabla. "recieveClotes.js" devuelve una pieza de ropa para que se pueda mostrar. El último archivo es "saveData.js", que guarda el contenido en el localStorage.
+
+<img src="./img/laundry.png">
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+<h2>Space Garage</h2>
+
+This exercise consists of 2 buttons, the first adds content to the table, and the second deletes the first item added. The JavaScript files linked to this page are "manageData.js" which recieves information about the button pressed and calls the respective function in the class "Garage.js" which also has a showData fuction, which displays the content in the table. "recieveAPIData.js" returns the name of a Star Wars Spaceship via API (SWAPI), so it can be displayed. The last file is "saveData.js" which saves the data in the localStorage.
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Este ejercicio está constituido por dos botones, el primero añade elementos a la tabla y el otro elimina el primero añadido. Los enlaces de JavaScript son de "manageData.js", que recibe información sobre el botón pulsado y responde en consonancia llamando a la respectiva función de "Garage.js", que también contiene una función llamada showData muestra el contenido de la tabla. "recieveAPIData.js" devuelve el nombre de una nave de Star Wars vía API (SWAPI). El último archivo es "saveData.js", que guarda el contenido en el localStorage.
+
+<img src="./img/spaceGarage.png">
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+<h2>Wishlist</h2>
+
+This exercise consists of 3 buttons, the first adds regular content to the table, the second one adds favourite content, and the last deletes a random item, with favourite products preference. The JavaScript files linked to this page are "manageData.js" which recieves information about the button pressed and calls the respective function in the class "Wishlist.js" which also has a showData fuction, which displays the content in the table. "recieveAPIData.js" returns the name of a multiple products via API (fakestoreapi), so it can be displayed. The last file is "saveData.js" which saves the data in the localStorage.
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Este ejercicio está constituido por tres botones, el primero añade elementos normales a la tabla, el segundo añade elementos favoritos y el último elimina un elemento aleatorio de la tabla, con preferencia en elementos favoritos. Los enlaces de JavaScript son de "manageData.js", que recibe información sobre el botón pulsado y responde en consonancia llamando a la respectiva función de "Wishlist.js", que también contiene una función llamada showData muestra el contenido de la tabla. "recieveAPIData.js" devuelve el nombre de un producto vía API (fakestoreapi). El último archivo es "saveData.js", que guarda el contenido en el localStorage.
+
+<img src="./img/wishlist.png">
