@@ -1,24 +1,27 @@
 'use strict';
 
+import { Wishlist } from "../classes/Wishlist.js";
+
 let wishlist = new Wishlist();
 
 wishlist.showData() ;
 
-/**
- * Adds wishes to the list
- * @param {boolean} favourite 
- */
-function moreWishes(favourite) {
 
-    wishlist.addData(favourite)
+document.getElementById("moreWishes").addEventListener("click", function() {
 
-}
+    wishlist.addData(false)
 
-/**
- * Removes a product from the table, with favourites preference
- */
-function buyProduct() {
+}) 
+
+document.getElementById("addFav").addEventListener("click", function() {
+
+    wishlist.addData(true)
+
+}) 
+
+
+document.getElementById("buyProduct").addEventListener("click", function() {
 
     wishlist.removeData() ;
 
-}
+}) 

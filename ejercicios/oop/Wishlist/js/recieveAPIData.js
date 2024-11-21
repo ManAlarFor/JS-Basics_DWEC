@@ -1,3 +1,6 @@
+
+export { recieveAPIData }
+
 /**
  * Recieves a character by the given random number
  * @param {int} id 

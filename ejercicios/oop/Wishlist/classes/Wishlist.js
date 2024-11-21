@@ -1,5 +1,10 @@
 "use strict";
 
+import { recieveAPIData } from "../js/recieveAPIData.js";
+import { saveData } from "../js/saveData.js";
+
+export { Wishlist } ;
+
 class Wishlist {
 
     amoutFav = 0;
@@ -18,7 +23,7 @@ class Wishlist {
 
         if (window.localStorage) {
 
-            let num = randomNum(1, 20);
+            let num = Math.floor(Math.random() * (20 - 1 + 1) + 1);
 
             let wish = await recieveAPIData(num);
 
@@ -41,17 +46,17 @@ class Wishlist {
 
             let num ;
 
-            if(wishlist.amoutFav > 0){
+            if(this.amoutFav > 0){
 
                 do{
 
-                    num = randomNum(0,data.length-1);
+                    num = Math.floor(Math.random() * (data.length-1 - 0 + 1) + 0);
 
                 }while(!data[num].fav)
 
             } else {
 
-                num = randomNum(0,data.length-1);
+                num = Math.floor(Math.random() * (data.length-1 - 0 + 1) + 0);
 
             }
 
