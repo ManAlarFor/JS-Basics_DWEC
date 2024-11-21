@@ -1,11 +1,12 @@
 "use strict"
 
+export {recieveClothes} ;
+
 /**
- * Recieves a pokemon by the given pokedex number
- * @param {int} id 
+ * Recieves a random clothing item 
  * @returns 
  */
-function recieveClothes(id){
+function recieveClothes(){
 
     const clothingItems = [
         "Shirt 👕",
@@ -34,7 +35,7 @@ function recieveClothes(id){
         "Loafers 👞"
     ];
 
-    let num = randomNum(0,clothingItems.length-1) ;
+    let num = Math.floor(Math.random() * ((clothingItems.length-1) - 0 + 1) + 0);
 
     return clothingItems[num] ;
 

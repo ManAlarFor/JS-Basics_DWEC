@@ -1,5 +1,10 @@
 "use strict"
 
+import { saveData } from "../js/saveData.js";
+import { recieveClothes } from "../js/recieveClothes.js";
+
+export {WashingMachine} ;
+
 class WashingMachine {
 
     constructor() {

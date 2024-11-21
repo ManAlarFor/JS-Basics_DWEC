@@ -1,17 +1,20 @@
 'use strict';
 
+import { WashingMachine } from "../classes/WashingMachine.js";
+
 let washingMachine = new WashingMachine();
 
 washingMachine.showData() ;
 
-function moreClothes() {
+document.getElementById("addClothes").addEventListener("click", function() {
 
     washingMachine.addData()
 
-}
+}) 
 
-function removeClothes() {
+
+document.getElementById("removeClothes").addEventListener("click", function() {
 
     washingMachine.removeData() ;
 
-}
+}) 
