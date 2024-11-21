@@ -1,10 +1,14 @@
 "use strict"
 
+import { saveData } from "../js/saveData.js";
+import { recieveAPIData } from "../js/recieveAPIData.js";
+
+export {Garage} ;
+
 class Garage {
 
     constructor() {
         this.garage = new Array();
-        this.tamano = 0;
     }
 
 
@@ -16,15 +20,15 @@ class Garage {
         document.getElementById("error").innerHTML = "" ;
     
         if (window.localStorage) {
-    
-            let num = randomNum(2,36) ;
-    
+
+            let num = Math.floor(Math.random() * (36 - 2 + 1) + 2);
+
             let ship = await recieveAPIData(num) ;
-    
+
             saveData(ship.name);
-    
+
         }
-    
+
         this.showData();
     }
 

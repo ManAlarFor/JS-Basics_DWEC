@@ -1,3 +1,6 @@
+
+export {recieveAPIData} ;
+
 /**
  * Recieves a character by the given random number
  * @param {int} id 
@@ -25,7 +28,7 @@ async function recieveAPIData(id){
 
         } else {
 
-            id = randomNum(1,36)
+            id = Math.floor(Math.random() * (36 - 2 + 1) + 2);
 
         }
     }

@@ -1,17 +1,20 @@
 'use strict';
 
+import { Garage } from "../classes/Garage.js"; 
+
 let garage = new Garage();
 
 garage.showData() ;
 
-function moreShips() {
+document.getElementById("moreShips").addEventListener("click", function() {
 
     garage.addData()
 
-}
+}) 
 
-function removeShip() {
+
+document.getElementById("removeShip").addEventListener("click", function() {
 
     garage.removeData() ;
 
-}
+}) 

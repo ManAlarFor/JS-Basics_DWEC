@@ -9,7 +9,6 @@ class WashingMachine {
 
     constructor() {
         this.garage = new Array();
-        this.tamano = 0;
     }
 
 

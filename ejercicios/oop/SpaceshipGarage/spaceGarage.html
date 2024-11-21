@@ -12,12 +12,12 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
-    <script defer src="./classes/Garage.js"></script>
+    <script defer src="./classes/Garage.js"     type="module"></script>
 
-    <script defer src="./js/manageData.js"></script>
-    <script defer src="./js/saveData.js"></script>
-    <script defer src="./js/recieveAPIData.js"></script>
-    <script defer src="../../js/randomNum.js"></script>
+    <script defer src="./js/manageData.js"      type="module"></script>
+    <script defer src="./js/saveData.js"        type="module"></script>
+    <script defer src="./js/recieveAPIData.js"  type="module"></script>
+    <script defer src="../../js/randomNum.js"   type="module"></script>
 </head>
 <body>
 
@@ -80,7 +80,7 @@
                                 <div class="row m-3">
 
                                     <div class="col mt-3">
-                                        <button class="btn btn-dark" onclick="return moreShips()">New Ship</button>
+                                        <button class="btn btn-dark" id="moreShips">New Ship</button>
                                     </div>
 
                                 </div>
@@ -88,7 +88,7 @@
                                 <div class="row m-3">
 
                                     <div class="col">
-                                        <button class="btn btn-dark" onclick="return removeShip()">Repair Ship</button>
+                                        <button class="btn btn-dark" id="removeShip">Repair Ship</button>
                                     </div>
 
                                 </div>

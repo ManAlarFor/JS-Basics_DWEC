@@ -1,5 +1,7 @@
 'use strict';
 
+export {saveData} ;
+
 /** 
  * Saves the introduced clothes
  * @param {string} ship
