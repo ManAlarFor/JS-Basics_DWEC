@@ -1,8 +1,10 @@
 "use strict"
 
+// Imports
 import { saveData } from "../js/saveData.js";
 import { recieveAPIData } from "../js/recieveAPIData.js";
 
+// Exports
 export {Garage} ;
 
 class Garage {

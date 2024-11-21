@@ -1,8 +1,10 @@
 "use strict"
 
+// Imports
 import { saveData } from "../js/saveData.js";
 import { recieveClothes } from "../js/recieveClothes.js";
 
+// Exports
 export {WashingMachine} ;
 
 class WashingMachine {

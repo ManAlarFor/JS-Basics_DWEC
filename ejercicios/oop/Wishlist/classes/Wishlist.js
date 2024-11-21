@@ -1,8 +1,10 @@
 "use strict";
 
+// Imports
 import { recieveAPIData } from "../js/recieveAPIData.js";
 import { saveData } from "../js/saveData.js";
 
+// Exports
 export { Wishlist } ;
 
 class Wishlist {
